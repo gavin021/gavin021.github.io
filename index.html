@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACTION FOR合同会社</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    
+    /* Header with animated background and fade-in text */
+    header {
+      background: linear-gradient(270deg, #004080, #0055a5, #004080);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header h1, header p {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    header h1 {
+      animation-delay: 0.5s;
+      font-size: 2.5rem;
+    }
+    header p {
+      animation-delay: 1s;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .lang-selector {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .lang-selector select {
+      padding: 0.3rem;
+    }
+
+    nav {
+      background: #003366;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .service {
+      flex: 1 1 30%;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .services { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="lang-selector">
+      <select onchange="changeLang(this.value)">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+        <option value="jp">日本語</option>
+      </select>
+    </div>
+    <h1 id="title">ACTION FOR合同会社</h1>
+    <p id="subtitle">专注于为客户提供高质量的产品与服务</p>
+  </header>
+
+  <nav>
+    <a href="#about" id="nav-about">关于我们</a>
+    <a href="#services" id="nav-services">服务</a>
+    <a href="#contact" id="nav-contact">联系方式</a>
+  </nav>
+
+  <section id="about">
+    <h2 id="about-title">关于我们</h2>
+    <p id="about-text">我们是一家致力于创新与品质的公司，拥有专业的团队和多年的行业经验。</p>
+  </section>
+
+  <section id="services">
+    <h2 id="services-title">我们的服务</h2>
+    <div class="services">
+      <div class="service">
+        <h3 id="s1-title">服务一</h3>
+        <p id="s1-text">介绍服务一的内容，可以根据实际情况修改。</p>
+      </div>
+      <div class="service">
+        <h3 id="s2-title">服务二</h3>
+        <p id="s2-text">介绍服务二的内容，可以根据实际情况修改。</p>
+      </div>
+      <div class="service">
+        <h3 id="s3-title">服务三</h3>
+        <p id="s3-text">介绍服务三的内容，可以根据实际情况修改。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 id="contact-title">联系方式</h2>
+    <p id="phone">电话：123-456-7890</p>
+    <p id="email">邮箱：example@company.com</p>
+    <p id="address">地址：某城市某街道123号</p>
+  </section>
+
+  <footer>
+    <p id="footer">&copy; 2025 公司名称. 保留所有权利。</p>
+  </footer>
+
+  <script>
+    const translations = {
+      zh: {
+        title: "ACTION FOR合同会社",
+        subtitle: "专注于为客户提供高质量的产品与服务",
+        "nav-about": "关于我们",
+        "nav-services": "服务",
+        "nav-contact": "联系方式",
+        "about-title": "关于我们",
+        "about-text": "我们是一家致力于创新与品质的公司，拥有专业的团队和多年的行业经验。",
+        "services-title": "我们的服务",
+        "s1-title": "服务一",
+        "s1-text": "介绍服务一的内容，可以根据实际情况修改。",
+        "s2-title": "服务二",
+        "s2-text": "介绍服务二的内容，可以根据实际情况修改。",
+        "s3-title": "服务三",
+        "s3-text": "介绍服务三的内容，可以根据实际情况修改。",
+        "contact-title": "联系方式",
+        phone: "电话：123-456-7890",
+        email: "邮箱：example@company.com",
+        address: "地址：某城市某街道123号",
+        footer: "&copy; 2025 公司名称. 保留所有权利。"
+      },
+      en: {
+        title: "ACTION FOR Inc.",
+        subtitle: "Committed to delivering high-quality products and services",
+        "nav-about": "About Us",
+        "nav-services": "Services",
+        "nav-contact": "Contact",
+        "about-title": "About Us",
+        "about-text": "We are a company committed to innovation and quality, with a professional team and years of experience.",
+        "services-title": "Our Services",
+        "s1-title": "Service One",
+        "s1-text": "Details about service one, customizable as needed.",
+        "s2-title": "Service Two",
+        "s2-text": "Details about service two, customizable as needed.",
+        "s3-title": "Service Three",
+        "s3-text": "Details about service three, customizable as needed.",
+        "contact-title": "Contact Us",
+        phone: "Phone: 123-456-7890",
+        email: "Email: example@company.com",
+        address: "Address: 123 Street, Some City",
+        footer: "&copy; 2025 Company Name. All rights reserved."
+      },
+      jp: {
+        title: "ACTION FOR合同会社",
+        subtitle: "高品質な製品とサービスをお届けします",
+        "nav-about": "会社概要",
+        "nav-services": "サービス",
+        "nav-contact": "お問い合わせ",
+        "about-title": "会社概要",
+        "about-text": "私たちは革新と品質に取り組む会社であり、専門チームと長年の経験を持っています。",
+        "services-title": "提供サービス",
+        "s1-title": "サービス一",
+        "s1-text": "サービス一の詳細、必要に応じて変更可能です。",
+        "s2-title": "サービス二",
+        "s2-text": "サービス二の詳細、必要に応じて変更可能です。",
+        "s3-title": "サービス三",
+        "s3-text": "サービス三の詳細、必要に応じて変更可能です。",
+        "contact-title": "お問い合わせ",
+        phone: "電話：123-456-7890",
+        email: "メール：example@company.com",
+        address: "住所：ある都市のある通り123号",
+        footer: "&copy; 2025 会社名. 全著作権所有。"
+      }
+    };
+
+    function changeLang(lang) {
+      const text = translations[lang];
+      for (const id in text) {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = text[id];
+      }
+    }
+  </script>
+
+</body>
+</html>
