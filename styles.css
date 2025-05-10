@@ -87,6 +87,30 @@ body {
     background-color: #fff;
 }
 
+/* 修复 iOS 设备上选中文字显示为蓝色的问题 */
+.language-selector select:focus {
+    color: #333;
+    -webkit-text-fill-color: #333;
+}
+
+.language-selector select:active {
+    color: #333;
+    -webkit-text-fill-color: #333;
+}
+
+.language-selector select:checked {
+    color: #333;
+    -webkit-text-fill-color: #333;
+}
+
+/* 针对 iOS 设备的特殊处理 */
+@supports (-webkit-touch-callout: none) {
+    .language-selector select {
+        color: #333 !important;
+        -webkit-text-fill-color: #333 !important;
+    }
+}
+
 .mobile-menu-btn {
     display: none;
 }
