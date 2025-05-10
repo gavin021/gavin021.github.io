@@ -78,6 +78,13 @@ body {
     background-position: right 8px center;
     background-size: 16px;
     padding-right: 32px;
+    color: #333;
+    -webkit-text-fill-color: #333;
+}
+
+.language-selector select option {
+    color: #333;
+    background-color: #fff;
 }
 
 .mobile-menu-btn {
