@@ -111,7 +111,12 @@ const translations = {
         'contact-person': 'Contact Person',
         'contact-phone': 'Phone',
         'contact-email': 'Email',
-        'contact-address': 'Address'
+        'contact-address': 'Address',
+        'contact-form-name': 'Your Name',
+        'contact-form-email': 'Your Email',
+        'contact-form-phone': 'Your Phone',
+        'contact-form-message': 'Message',
+        'contact-form-submit': 'Submit'
     },
     'zh': {
         'nav-home': '首页',
@@ -176,7 +181,12 @@ const translations = {
         'contact-person': '联系人',
         'contact-phone': '联系电话',
         'contact-email': '电子邮箱',
-        'contact-address': '公司地址'
+        'contact-address': '公司地址',
+        'contact-form-name': '您的姓名',
+        'contact-form-email': '您的邮箱',
+        'contact-form-phone': '您的电话',
+        'contact-form-message': '咨询内容',
+        'contact-form-submit': '提交'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -241,7 +251,12 @@ const translations = {
         'contact-person': '担当者',
         'contact-phone': '電話番号',
         'contact-email': 'メールアドレス',
-        'contact-address': '会社住所'
+        'contact-address': '会社住所',
+        'contact-form-name': 'お名前',
+        'contact-form-email': 'メールアドレス',
+        'contact-form-phone': '電話番号',
+        'contact-form-message': 'お問い合わせ内容',
+        'contact-form-submit': '送信'
     }
 };
 
