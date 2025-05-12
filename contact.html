@@ -52,6 +52,29 @@
         </div>
     </header>
 
+    <!-- 联系表单 -->
+    <section class="contact-form-section">
+        <form id="contactForm" class="contact-form" method="post" action="https://formsubmit.co/liuchao021@gmail.com" autocomplete="off">
+            <div class="form-group">
+                <label for="name">您的姓名</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">您的邮箱</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">您的电话</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">咨询内容</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">提交</button>
+        </form>
+    </section>
+
     <!-- 主要内容 -->
     <main class="contact-content">
         <section class="contact-info">
@@ -155,5 +178,27 @@
     </div>
 
     <script src="main.js"></script>
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        // 校验必填项
+        let valid = true;
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+        [name, email, message].forEach(input => {
+            input.style.borderColor = '';
+            if (!input.value.trim()) {
+                input.style.borderColor = '#e74c3c';
+                valid = false;
+            }
+        });
+        if (!valid) {
+            e.preventDefault();
+            return;
+        }
+        // 如果有action，允许表单正常POST提交，提交后清空
+        setTimeout(()=>{ this.reset(); }, 100);
+    });
+    </script>
 </body>
 </html> 

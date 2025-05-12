@@ -2944,3 +2944,54 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     margin-right: 0;
   }
 }
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 2rem 0;
+}
+.contact-form {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(39, 126, 71, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact-form label {
+    font-weight: 600;
+    color: #277E47;
+    margin-bottom: 0.2rem;
+}
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #fafbfc;
+    resize: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #277E47;
+    background: #fff;
+}
+.contact-form .cta-button {
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    border-radius: 8px;
+}
