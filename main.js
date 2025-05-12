@@ -165,7 +165,9 @@ const translations = {
         'terms-changes': 'Changes to Terms',
         'terms-changes-text': 'We reserve the right to modify these terms of use at any time. The modified terms will take effect immediately upon posting on the website. Continued use of this website constitutes your acceptance of the modified terms.',
         'terms-contact': 'Contact Us',
-        'terms-contact-text': 'If you have any questions about these terms of use, please contact us by the following means:'
+        'terms-contact-text': 'If you have any questions about these terms of use, please contact us by the following means:',
+        'hero-slide2-title': 'Ready to scale your business in Asia?',
+        'hero-slide3-title': 'Achieve sustained growth with tailored strategies'
     },
     'zh': {
         'nav-home': '首页',
@@ -284,7 +286,9 @@ const translations = {
         'terms-changes': '条款修改',
         'terms-changes-text': '我们保留随时修改这些使用条款的权利。修改后的条款将在网站上发布后立即生效。继续使用本网站即表示您接受修改后的条款。',
         'terms-contact': '联系我们',
-        'terms-contact-text': '如果您对这些使用条款有任何疑问，请通过以下方式联系我们：'
+        'terms-contact-text': '如果您对这些使用条款有任何疑问，请通过以下方式联系我们：',
+        'hero-slide2-title': '准备好在亚洲扩展您的业务了吗？',
+        'hero-slide3-title': '通过定制化策略实现持续增长'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -403,7 +407,9 @@ const translations = {
         'terms-changes': '規約の変更',
         'terms-changes-text': '当社はこれらの利用規約を随時変更する権利を有します。変更後の規約はウェブサイト上に掲載された時点で直ちに有効となります。引き続き本ウェブサイトを利用することで、変更後の規約に同意したものとみなされます。',
         'terms-contact': 'お問い合わせ',
-        'terms-contact-text': 'これらの利用規約に関してご質問がある場合は、以下の方法でご連絡ください：'
+        'terms-contact-text': 'これらの利用規約に関してご質問がある場合は、以下の方法でご連絡ください：',
+        'hero-slide2-title': 'アジアでビジネスを拡大する準備はできていますか？',
+        'hero-slide3-title': '最適化された戦略で持続的な成長を実現'
     }
 };
 
