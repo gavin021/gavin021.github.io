@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -156,11 +160,14 @@ body {
 }
 
 .hero-title {
+    font-size: 2.8rem;
     line-height: 1.2;
     text-align: center;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
+    font-weight: bold;
 }
 
 .hero h1 {
@@ -453,6 +460,10 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .blog-card.visible {
@@ -583,7 +594,7 @@ body {
     min-height: 220px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     border: none;
 }
@@ -2599,21 +2610,22 @@ body {
 
 .result-card {
     background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    padding: 2.2rem 1.5rem 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 4px 18px rgba(39, 126, 71, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+    position: relative;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 260px;
+    justify-content: flex-start;
+    border: none;
 }
 
 .result-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(39, 126, 71, 0.16), 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .result-card h3 {
@@ -2656,11 +2668,12 @@ body {
 }
 
 .result-image {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
     width: 50%;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 1.2rem auto;
-    display: block;
     border-radius: 0;
     box-shadow: none;
     border: none;
@@ -2722,4 +2735,212 @@ body {
 
 .blog-card .blog-content {
     text-align: left;
+}
+
+/* Hero Slider 基础样式 */
+.hero-slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.hero-slider-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(.77,0,.18,1);
+  width: 300vw;
+  height: 100vh;
+}
+.hero-slide {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.star-bg {
+  background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35) !important;
+  position: relative;
+}
+
+/* 保证星空动画依然生效 */
+.star-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 4s ease-in-out infinite;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+.star-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(1px 1px at 25px 5px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 50px 25px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 125px 20px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 50px 75px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 15px 125px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2.5px 2.5px at 110px 80px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 5s ease-in-out infinite;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 2;
+}
+.star-bg .shooting-star {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(45deg, #fff, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px #fff);
+    animation: shooting 3s linear infinite;
+    pointer-events: none;
+    z-index: 3;
+}
+.star-bg .shooting-star:nth-child(1) {
+    top: 0;
+    left: 20%;
+    animation-delay: 0s;
+}
+.star-bg .shooting-star:nth-child(2) {
+    top: 0;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+
+.hero-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hero-slider-arrow.left { left: 24px; }
+.hero-slider-arrow.right { right: 24px; }
+.hero-slider-arrow:hover { background: rgba(0,0,0,0.6); }
+.hero-slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+.hero-slider-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+}
+.hero-slider-dots .dot.active {
+  opacity: 1;
+  background: var(--primary-color);
 } 
+
+/* 恢复 hero-subtitle 原始样式 */
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(39, 126, 71, 0.3);
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.hero-slider .hero-slide:not(.star-bg)  {
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    color: #277E47;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+section.hero-slider .hero-slide:not(.star-bg) .hero-title,
+section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
+    text-shadow: none !important;
+}
+
+.hero-blur-bg {
+    background: rgba(255,255,255,0.25   );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    color: #277E47;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+.hero-blur-bg .hero-title,
+.hero-blur-bg .hero-subtitle {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+.hero-blur-bg .hero-title {
+    /* 兼容性处理 */
+    paint-order: stroke fill;
+}
+
+@media (min-width: 901px) {
+  .result-card {
+    padding: 2.2rem 1.5rem 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card .result-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

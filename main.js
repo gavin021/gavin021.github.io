@@ -107,7 +107,11 @@ const translations = {
         'cookie-marketing': 'Marketing Cookies',
         'cookie-marketing-desc': 'Used for personalized advertising and marketing content.',
         'cookie-accept-all': 'Accept All',
-        'cookie-save': 'Save Settings'
+        'cookie-save': 'Save Settings',
+        'contact-person': 'Contact Person',
+        'contact-phone': 'Phone',
+        'contact-email': 'Email',
+        'contact-address': 'Address'
     },
     'zh': {
         'nav-home': '首页',
@@ -168,7 +172,11 @@ const translations = {
         'cookie-marketing': '营销 Cookie',
         'cookie-marketing-desc': '用于个性化广告和营销内容。',
         'cookie-accept-all': '接受所有',
-        'cookie-save': '保存设置'
+        'cookie-save': '保存设置',
+        'contact-person': '联系人',
+        'contact-phone': '联系电话',
+        'contact-email': '电子邮箱',
+        'contact-address': '公司地址'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -229,7 +237,11 @@ const translations = {
         'cookie-marketing': 'マーケティングCookie',
         'cookie-marketing-desc': 'パーソナライズされた広告やマーケティングコンテンツに使用されます。',
         'cookie-accept-all': 'すべて受け入れる',
-        'cookie-save': '設定を保存'
+        'cookie-save': '設定を保存',
+        'contact-person': '担当者',
+        'contact-phone': '電話番号',
+        'contact-email': 'メールアドレス',
+        'contact-address': '会社住所'
     }
 };
 
@@ -425,4 +437,49 @@ window.addEventListener('scroll', () => {
     }
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+// Hero Slider 横向滚动控制
+function initHeroSlider() {
+    const track = document.querySelector('.hero-slider-track');
+    const slides = document.querySelectorAll('.hero-slide');
+    const leftBtn = document.querySelector('.hero-slider-arrow.left');
+    const rightBtn = document.querySelector('.hero-slider-arrow.right');
+    const dots = document.querySelectorAll('.hero-slider-dots .dot');
+    let current = 0;
+    let timer = null;
+    function goTo(idx, auto=false) {
+        if(idx < 0) idx = 0;
+        if(idx > slides.length-1) idx = slides.length-1;
+        current = idx;
+        track.style.transform = `translateX(-${idx * 100}vw)`;
+        dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+        if(!auto) restartAuto();
+    }
+    function next(auto=false) {
+        if(current < slides.length-1) {
+            goTo(current+1, auto);
+        } else {
+            goTo(0, auto);
+        }
+    }
+    function restartAuto() {
+        if(timer) clearInterval(timer);
+        timer = setInterval(()=>next(true), 3000);
+    }
+    leftBtn.addEventListener('click',()=>goTo(current-1));
+    rightBtn.addEventListener('click',()=>goTo(current+1));
+    dots.forEach((d,i)=>d.addEventListener('click',()=>goTo(i)));
+    window.addEventListener('keydown',e=>{
+        if(document.activeElement.tagName==='INPUT'||document.activeElement.tagName==='TEXTAREA') return;
+        if(e.key==='ArrowLeft') goTo(current-1);
+        if(e.key==='ArrowRight') goTo(current+1);
+    });
+    goTo(0);
+    restartAuto();
+}
+document.addEventListener('DOMContentLoaded',function(){
+    if(document.querySelector('.hero-slider')){
+        initHeroSlider();
+    }
 }); 

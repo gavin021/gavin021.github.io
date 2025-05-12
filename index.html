@@ -43,19 +43,50 @@
         </div>
     </nav>
 
-    <!-- 主页横幅 -->
-    <header class="hero fullscreen">
-        <div class="shooting-star"></div>
-        <div class="shooting-star"></div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-translate="hero-title">Launch Smarter.<br>Scale Faster.<br>Win in Japan and China.</h1>
-            <p class="hero-subtitle">
-                <span data-translate="hero-subtitle1">We turn big dreams into bold realities.</span><br>
-                <span data-translate="hero-subtitle2">From zero to hero, our local know-how, creative firepower, and growth-first strategies help foreign brands thrive in Asia's most exciting markets.</span>
-            </p>
-            <a href="contact.html" class="cta-button" data-translate="cta-button">Get Started</a>
+    <!-- 主页横幅横向滚动Slider -->
+    <section class="hero-slider">
+        <div class="hero-slider-track">
+            <!-- 第一页：现有星空和内容 -->
+            <div class="hero-slide fullscreen star-bg">
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title" data-translate="hero-title">Launch Smarter.<br>Scale Faster.<br>Win in Japan and China.</h1>
+                    <br/>
+                    <p class="hero-subtitle">
+                        <span data-translate="hero-subtitle1">We turn big dreams into bold realities.</span><br>
+                        <span data-translate="hero-subtitle2">From zero to hero, our local know-how, creative firepower, and growth-first strategies help foreign brands thrive in Asia's most exciting markets.</span>
+                    </p>
+                    <a href="contact.html" class="cta-button" data-translate="cta-button">Get Started</a>
+                </div>
+            </div>
+            <!-- 第二页：index-bg1.jpg -->
+            <div class="hero-slide fullscreen" style="background: url('images/index-bg1.jpg') center center/cover no-repeat;">
+                <div class="hero-content">
+                    <div class="hero-blur-bg">
+                        <h1 class="hero-title" data-translate="hero-title">Launch Smarter.<br>Scale Faster.<br>Win in Japan and China.</h1>
+                    </div>
+                    <a href="contact.html" class="cta-button" data-translate="cta-button">Get Started</a>
+                </div>
+            </div>
+            <!-- 第三页：index-bg2.jpg -->
+            <div class="hero-slide fullscreen" style="background: url('images/index-bg2.jpg') center center/cover no-repeat;">
+                <div class="hero-content">
+                    <div class="hero-blur-bg">
+                        <h1 class="hero-title" data-translate="hero-title">Launch Smarter.<br>Scale Faster.<br>Win in Japan and China.</h1>
+                    </div>
+                    <a href="contact.html" class="cta-button" data-translate="cta-button">Get Started</a>
+                </div>
+            </div>
         </div>
-    </header>
+        <button class="hero-slider-arrow left" aria-label="Previous">&#8592;</button>
+        <button class="hero-slider-arrow right" aria-label="Next">&#8594;</button>
+        <div class="hero-slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
 
     <!-- 主要服务 -->
     <section class="services-preview">
@@ -112,8 +143,8 @@
         <h2 class="results-title">Results</h2>
         <div class="results-grid">
             <div class="result-card">
+                <h2>Private Client | 3.5-Month Google Ads Results</h2>
                 <img src="images/result1.png" alt="Result 1" class="result-image">
-                <h3>Private Client | 3.5-Month Google Ads Results</h3>
                 <ul>
                     <li><span class="result-number">8.89x</span> ROAS achieved</li>
                     <li><span class="result-number">$219K</span> in sales generated</li>
@@ -122,8 +153,8 @@
                 <p>Smart campaign design and ongoing cost control turned a first-time advertiser into a high-performing success story.</p>
             </div>
             <div class="result-card">
+                <h2>Private Client | 3-Month Google Ads Turnaround</h2>
                 <img src="images/result2.png" alt="Result 2" class="result-image">
-                <h3>Private Client | 3-Month Google Ads Turnaround</h3>
                 <ul>
                     <li><span class="result-number">12.63x</span> ROAS delivered</li>
                     <li><span class="result-number">$123K</span> in sales after a full account rebuild</li>
@@ -132,8 +163,8 @@
                 <p>After taking over from a poorly managed setup, our data-driven strategy transformed this account into a high-performance revenue engine.</p>
             </div>
             <div class="result-card">
+                <h2>Real Estate Client | 9-Month Content Marketing Results</h2>
                 <img src="images/result3.png" alt="Result 3" class="result-image">
-                <h3>Real Estate Client | 9-Month Content Marketing Results</h3>
                 <ul>
                     <li><span class="result-number">+320%</span> English site clicks <span class="result-note">(+42,000 clicks)</span></li>
                     <li><span class="result-number">+140%</span> impressions growth <span class="result-note">(+1 million impressions)</span></li>
