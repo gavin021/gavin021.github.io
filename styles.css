@@ -1081,6 +1081,20 @@ body {
     line-height: 1.6;
 }
 
+.team-member .view-details {
+    display: block;
+    text-align: right;
+    padding: 0 1.5rem 1.5rem;
+    color: #277E47;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.team-member .view-details:hover {
+    color: #1a4d2e;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .about-content {
@@ -2154,5 +2168,268 @@ body {
         padding: 10px 16px;
         font-size: 18px;
         min-width: 120px;
+    }
+}
+
+/* 首页横向滚动部分样式 */
+.scroll-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+
+/* 全屏滚动部分样式 */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
+}
+
+/* 首页第二、三页特殊样式 */
+.scroll-container .second-section {
+    background: url('images/index-bg1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.scroll-container .third-section {
+    background: url('images/index-bg2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    /* 移动端首页滚动部分样式 */
+    .scroll-container {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-container .hero-section {
+        width: 100vw;
+        height: 100%;
+        flex: 0 0 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-container .second-section {
+        background-size: cover;
+    }
+
+    .scroll-container .third-section {
+        background-size: cover;
+    }
+}
+
+.company-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.company-intro .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.company-intro .subheadline {
+    margin-bottom: 40px;
+}
+
+.company-intro .subheadline p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.company-intro .opening-paragraph {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid rgba(39, 126, 71, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-intro .opening-paragraph p {
+    margin: 0;
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .company-intro {
+        padding: 40px 20px;
+    }
+
+    .company-intro .section-title {
+        font-size: 2rem;
+    }
+
+    .company-intro .subheadline p {
+        font-size: 1.2rem;
+    }
+
+    .company-intro .opening-paragraph {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    
+    .company-intro .opening-paragraph p {
+        font-size: 1rem;
+    }
+}
+
+/* Team Detail Page Styles */
+.team-detail-page {
+    background-color: #f8f9fa;
+}
+
+.team-detail-content {
+    padding: 60px 20px;
+}
+
+.team-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.team-detail-header {
+    display: flex;
+    padding: 40px;
+    background: linear-gradient(135deg, #277e47 0%, #1a4d2e 100%);
+    color: #fff;
+}
+
+.team-detail-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    margin-right: 40px;
+}
+
+.team-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-detail-info {
+    flex: 1;
+}
+
+.team-detail-info h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.team-detail-info h2 {
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.team-detail-info .tagline {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.team-detail-body {
+    padding: 40px;
+}
+
+.team-detail-section {
+    margin-bottom: 30px;
+}
+
+.team-detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.team-detail-section h3 {
+    font-size: 1.3rem;
+    color: #277e47;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.team-detail-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .team-detail-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .team-detail-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 0 20px;
+    }
+
+    .team-detail-info h1 {
+        font-size: 2rem;
+    }
+
+    .team-detail-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .team-detail-body {
+        padding: 30px 20px;
+    }
+
+    .team-detail-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-detail-section p {
+        font-size: 1rem;
     }
 } 
