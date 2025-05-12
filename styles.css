@@ -485,7 +485,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -520,9 +520,37 @@ body {
     display: block;
     text-align: center;
     margin-top: 3rem;
-    color: var(--primary-color);
+    color: #fff;
+    background: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    width: 100%;
+}
+
+.view-more::before {
+    content: '\2192'; /* Unicode right arrow */
+    display: inline-block;
+    margin-right: 0.7em;
+    font-size: 1.1em;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.view-more:hover {
+    background: #1a5c35;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
 /* 博客预览样式 */
@@ -891,7 +919,7 @@ body {
 .partners h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--primary-color);
+    color: #000;
 }
 
 .partners-container {
@@ -1253,8 +1281,10 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -1281,15 +1311,18 @@ body {
     transform: scale(1.1);
 }
 
-.service-card h3 {
+.service-card h4 {
+    font-size: 1.18rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
 }
 
 .service-card p {
-    color: var(--text-color);
+    color: #555;
+    font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 0;
 }
 
 /* 响应式设计 */
@@ -2432,5 +2465,105 @@ body {
 
     .team-detail-section p {
         font-size: 1rem;
+    }
+}
+
+.service-category {
+    padding: 2rem;
+}
+
+.service-category-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.service-category-intro {
+    font-size: 1.15rem;
+    color: #555;
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.services-grid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2.2rem 1.5rem 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(39, 126, 71, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(39, 126, 71, 0.16), 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.service-card i {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.service-card:hover i {
+    color: var(--secondary-color);
+    transform: scale(1.12);
+}
+
+.service-card h4 {
+    font-size: 1.18rem;
+    color: var(--primary-color);
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-preview {
+    }
+    .service-category {
+        padding: 0rem;
+        padding-bottom: 2rem;
+    }
+    .service-category-title {
+        font-size: 1.3rem;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .service-card {
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+        min-height: 160px;
     }
 } 
