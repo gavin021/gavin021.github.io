@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTION FOR - News</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ACTION FOR Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-translate="nav-home">Home</a>
+                <a href="about.html" data-translate="nav-about">About Us</a>
+                <a href="services.html" data-translate="nav-services">Services</a>
+                <a href="news.html" class="active" data-translate="nav-news">News</a>
+                <a href="contact.html" data-translate="nav-contact">Contact Us</a>
+            </div>
+            <div class="language-selector">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html" data-translate="nav-home">Home</a>
+            <a href="about.html" data-translate="nav-about">About Us</a>
+            <a href="services.html" data-translate="nav-services">Services</a>
+            <a href="news.html" class="active" data-translate="nav-news">News</a>
+            <a href="contact.html" data-translate="nav-contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- News Detail Content -->
+    <div class="news-detail-content">
+        <article class="news-post">
+            <div class="news-header">
+                <h1 data-translate="news-live-commerce-title">Chinese Live Commerce: Inspiring New Sales Models in Japan</h1>
+                <div class="news-meta">
+                    <span>2025-04-31</span>
+                </div>
+            </div>
+            <div class="news-image">
+                <img src="images/News-Zhobo.png" alt="Live Commerce" class="result-image">
+            </div>
+            <div class="news-body">
+                <p data-translate="news-live-commerce-desc">Chinese live commerce has revolutionized the retail landscape, offering a dynamic and interactive shopping experience. This innovative approach, which combines entertainment with e-commerce, is now inspiring Japanese retailers to adopt similar strategies to enhance customer engagement and drive sales.</p>
+                
+                <h2 data-translate="news-live-commerce-section1-title">The Rise of Live Commerce in China</h2>
+                <p data-translate="news-live-commerce-section1-desc">Live commerce in China has become a powerful tool for brands to connect with consumers in real-time. Through live streaming, sellers can showcase products, answer questions, and create a sense of urgency, leading to higher conversion rates and increased customer loyalty.</p>
+                
+                <h2 data-translate="news-live-commerce-section2-title">Adoption in Japan</h2>
+                <p data-translate="news-live-commerce-section2-desc">Japanese retailers are beginning to explore live commerce as a means to revitalize their sales strategies. By incorporating elements of entertainment and interactivity, they aim to attract younger consumers and create a more engaging shopping experience.</p>
+                
+                <h2 data-translate="news-live-commerce-section3-title">Future Prospects</h2>
+                <p data-translate="news-live-commerce-section3-desc">As live commerce continues to gain traction in Japan, it is expected to reshape the retail industry. Companies that successfully integrate this model into their operations will likely see significant growth in customer engagement and sales.</p>
+            </div>
+            <div class="news-tags">
+                <span class="tag" data-translate="news-live-commerce-tag1">Live Commerce</span>
+                <span class="tag" data-translate="news-live-commerce-tag2">Retail Innovation</span>
+                <span class="tag" data-translate="news-live-commerce-tag3">Customer Engagement</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo-transparent.png" alt="ACTION FOR Logo" style="width: 120px; margin-bottom: 15px; filter: brightness(0) invert(1);">
+                <h4>ActionFor合同会社</h4>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="quick-links">Quick Links</h4>
+                <ul>
+                    <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                    <li><a href="services.html" data-translate="nav-services">Services</a></li>
+                    <li><a href="news.html" data-translate="nav-news">News</a></li>
+                    <li><a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="contact-title">Contact Information</h4>
+                <p data-translate="contact-phone-text">Phone: 080-7099-0700</p>
+                <p data-translate="contact-email-text">Email: andrealee199202@gmail.com</p>
+                <p data-translate="contact-address-text">Address: 東京都中央区晴海3-16-1ベイサイドタワー晴海2003</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="privacy.html" data-translate="privacy-policy">Privacy Policy</a>
+                <a href="#" class="cookie-settings-btn" data-translate="cookie-settings">Cookie Settings</a>
+                <a href="terms.html" data-translate="terms">Terms of Use</a>
+            </div>
+            <p>&copy; 2024 ACTION FOR. <span data-translate="all-rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACTION FOR - HOME</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -107,11 +107,74 @@
         <a href="services.html" class="view-more" data-translate="view-more">了解更多服务</a>
     </section>
 
+    <!-- Results 区块 -->
+    <section class="results-preview">
+        <h2 class="results-title">Results</h2>
+        <div class="results-grid">
+            <div class="result-card">
+                <img src="images/result1.png" alt="Result 1" class="result-image">
+                <h3>Private Client | 3.5-Month Google Ads Results</h3>
+                <ul>
+                    <li><span class="result-number">8.89x</span> ROAS achieved</li>
+                    <li><span class="result-number">$219K</span> in sales generated</li>
+                </ul>
+                <p>Local business breakthrough via strategic ad launch and optimization</p>
+                <p>Smart campaign design and ongoing cost control turned a first-time advertiser into a high-performing success story.</p>
+            </div>
+            <div class="result-card">
+                <img src="images/result2.png" alt="Result 2" class="result-image">
+                <h3>Private Client | 3-Month Google Ads Turnaround</h3>
+                <ul>
+                    <li><span class="result-number">12.63x</span> ROAS delivered</li>
+                    <li><span class="result-number">$123K</span> in sales after a full account rebuild</li>
+                </ul>
+                <p>From mismanaged to market-leading in just 90 days</p>
+                <p>After taking over from a poorly managed setup, our data-driven strategy transformed this account into a high-performance revenue engine.</p>
+            </div>
+            <div class="result-card">
+                <img src="images/result3.png" alt="Result 3" class="result-image">
+                <h3>Real Estate Client | 9-Month Content Marketing Results</h3>
+                <ul>
+                    <li><span class="result-number">+320%</span> English site clicks <span class="result-note">(+42,000 clicks)</span></li>
+                    <li><span class="result-number">+140%</span> impressions growth <span class="result-note">(+1 million impressions)</span></li>
+                </ul>
+                <p>Explosive blog traffic growth in a competitive market</p>
+                <p>Powerful content strategy that turned visibility into real business traction.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- 最新动态 -->
     <section class="blog-preview">
         <h2 data-translate="news-title">最新动态</h2>
         <div class="blog-grid">
-            <article class="blog-card" onclick="window.location.href='news-detail.html?id=1'">
+            <article class="blog-card" onclick="window.location.href='news-details-20250431.html'">
+                <div class="news-item-image">
+                    <img src="images/News-Zhobo.png" alt="Live Commerce">
+                </div>
+                <div class="blog-content">
+                    <h3 data-translate="news-live-commerce-title">Chinese Live Commerce: Inspiring New Sales Models in Japan</h3>
+                    <div class="blog-meta">
+                        <span>2025-04-31</span>
+                    </div>
+                    <p data-translate="news-live-commerce-desc">Chinese live commerce has revolutionized the retail landscape, offering a dynamic and interactive shopping experience. This innovative approach, which combines entertainment with e-commerce, is now inspiring Japanese retailers to adopt similar strategies to enhance customer engagement and drive sales.</p>
+                    <a href="news-details-20250431.html" class="read-more" data-translate="news-read-more">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card" onclick="window.location.href='news-details-20250108.html'">
+                <div class="news-item-image">
+                    <img src="images/News-Media-Social-Marketing-Platforms.jpg" alt="社交媒体营销趋势">
+                </div>
+                <div class="blog-content">
+                    <h3 data-translate="news-social-title" style="font-size: 1.3rem;">Social Media Marketing in 2025: New Trends and Opportunities for Business Promotion</h3>
+                    <div class="blog-meta">
+                        <span>2025-01-08</span>
+                    </div>
+                    <p data-translate="news-social-desc">As social media continues to evolve, corporate marketing strategies in 2025 are undergoing significant transformations. From short-form video content to AI-driven personalized marketing, businesses must adapt to these new trends to remain competitive in the digital marketing landscape.</p>
+                    <a href="news-details-20250108.html" class="read-more" data-translate="news-read-more">阅读更多</a>
+                </div>
+            </article>
+            <article class="blog-card">
                 <div class="news-item-image">
                     <img src="images/news.webp" alt="新闻图片">
                 </div>
@@ -121,33 +184,7 @@
                         <span>2024-03-15</span>
                     </div>
                     <p data-translate="news-ai-desc">人工智能（AI）正在深刻改变着现代商业的运作方式。从自动化流程到智能决策支持，AI技术为企业带来了前所未有的机遇和挑战。</p>
-                    <a href="news-detail.html?id=1" class="read-more" data-translate="news-read-more">阅读更多</a>
-                </div>
-            </article>
-            <article class="blog-card" onclick="window.location.href='news-detail.html?id=2'">
-                <div class="news-item-image">
-                    <img src="images/news.webp" alt="新闻图片">
-                </div>
-                <div class="blog-content">
-                    <h3 data-translate="news-digital-title" style="font-size: 1.3rem;">数字化转型指南</h3>
-                    <div class="blog-meta">
-                        <span>2024-03-10</span>
-                    </div>
-                    <p data-translate="news-digital-desc">数字化转型不仅仅是技术层面的改变，更是重塑商业模式和组织文化以适应数字时代。</p>
-                    <a href="news-detail.html?id=2" class="read-more" data-translate="news-read-more">阅读更多</a>
-                </div>
-            </article>
-            <article class="blog-card" onclick="window.location.href='news-detail.html?id=3'">
-                <div class="news-item-image">
-                    <img src="images/news.webp" alt="新闻图片">
-                </div>
-                <div class="blog-content">
-                    <h3 data-translate="news-cloud-title" style="font-size: 1.3rem;">云计算最佳实践</h3>
-                    <div class="blog-meta">
-                        <span>2024-03-05</span>
-                    </div>
-                    <p data-translate="news-cloud-desc">云计算已成为现代IT基础设施的基石。理解和实施最佳实践对业务成功至关重要。</p>
-                    <a href="news-detail.html?id=3" class="read-more" data-translate="news-read-more">阅读更多</a>
+                    <a href="news-details-20240315.html?id=1" class="read-more" data-translate="news-read-more">阅读更多</a>
                 </div>
             </article>
         </div>
@@ -265,6 +302,30 @@
             </div>
         </div>
     </div>
+
+    <!-- Results 区块图片放大模态框 -->
+    <div class="result-modal" id="resultModal">
+        <span class="result-modal-close" id="resultModalClose">&times;</span>
+        <img src="" alt="Result Large" id="resultModalImg">
+    </div>
+    <script>
+    // Results 区块图片放大功能
+    document.querySelectorAll('.result-image').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var modal = document.getElementById('resultModal');
+            var modalImg = document.getElementById('resultModalImg');
+            modal.classList.add('active');
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
+    });
+    document.getElementById('resultModalClose').onclick = function() {
+        document.getElementById('resultModal').classList.remove('active');
+    };
+    document.getElementById('resultModal').onclick = function(e) {
+        if(e.target === this) this.classList.remove('active');
+    };
+    </script>
 
     <script src="main.js"></script>
 </body>

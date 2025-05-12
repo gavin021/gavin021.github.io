@@ -117,13 +117,115 @@ const translations = {
         'team-title': 'Core Team',
         'team-ceo-name': 'Andrea Lee',
         'team-ceo-position': 'Founder & Chief Growth Officer',
-        'team-ceo-desc': 'A Bridge Between Cultures. A Catalyst for Growth. With over 12 years of hands-on experience helping global brands enter and scale across Japan and Greater China, Andrea Lee is a rare breed: a marketing strategist fluent in the cultures, languages, and business landscapes of both East and West.',
+        'team-ceo-desc': 'A Bridge Between Cultures. A Catalyst for Growth. ',
         'team-cto-name': 'Pherson Wong',
         'team-cto-position': 'Senior Digital Strategy Partner',
-        'team-cto-desc': 'Shaping Digital Growth Across Japan and Asia. With over a decade of leadership experience in the digital marketing industry, Pherson brings a rare blend of agency excellence, cross-border strategy, and cutting-edge media technology expertise to our team.',
+        'team-cto-desc': 'Shaping Digital Growth Across Japan and Asia.',
         'team-cmo-name': 'Mattiuw Reynolds',
         'team-cmo-position': 'Senior Digital Marketing Strategist',
-        'team-cmo-desc': 'Driving Full-Stack Digital Success Across Japan and the U.S. Mattiuw Reynolds brings over 15 years of digital marketing experience, specializing in full-stack B2B and B2C growth strategies for the Japanese and U.S. markets.'
+        'team-cmo-desc': 'Driving Full-Stack Digital Success Across Japan and the U.S. ',
+        'news': {
+            title: {
+                en: "Latest News",
+                zh: "最新动态",
+                jp: "最新ニュース"
+            },
+            "social-title": {
+                en: "Social Media Marketing Trends 2025: New Opportunities for Business Promotion",
+                zh: "2025年社交媒体营销：企业推广的新趋势与机遇",
+                jp: "2025年ソーシャルメディアマーケティング：ビジネスプロモーションの新トレンドと機会"
+            },
+            "social-desc": {
+                en: "As social media continues to evolve, corporate marketing strategies in 2025 are undergoing significant changes. From short-form video content to AI-driven personalized marketing, businesses need to adapt to these new trends to maintain competitiveness in digital marketing.",
+                zh: "随着社交媒体的持续发展，2025年的企业营销策略正在经历重大变革。从短视频内容到AI驱动的个性化营销，企业需要适应这些新趋势才能在数字营销领域保持竞争力。",
+                jp: "ソーシャルメディアの継続的な発展に伴い、2025年の企業マーケティング戦略は大きな変革を遂げています。ショート動画コンテンツからAI駆動のパーソナライズドマーケティングまで、企業はデジタルマーケティング分野で競争力を維持するために、これらの新トレンドに適応する必要があります。"
+            },
+            "social-section1-title": {
+                en: "The Rise of Short Video Marketing",
+                zh: "短视频营销的崛起",
+                jp: "ショート動画マーケティングの台頭"
+            },
+            "social-section1-desc": {
+                en: "Short video platforms like TikTok, Xiaohongshu, and Douyin have become important marketing channels for businesses. Data shows that in 2025, user engagement with short video content is 300% higher than traditional text and image content. Companies need to master short video production techniques to create content that quickly captures user attention.",
+                zh: "短视频平台如TikTok、小红书和抖音已经成为企业营销的重要阵地。数据显示，2025年短视频内容的用户参与度比传统图文内容高出300%。企业需要掌握短视频制作技巧，创造能够快速抓住用户注意力的内容。",
+                jp: "TikTok、小紅書、抖音などのショート動画プラットフォームは、企業の重要なマーケティングチャネルとなっています。データによると、2025年にはショート動画コンテンツのユーザーエンゲージメントが従来のテキストや画像コンテンツより300%高いことが示されています。企業はユーザーの注目を素早く集めるコンテンツを作成するために、ショート動画制作技術を習得する必要があります。"
+            },
+            "social-section2-title": {
+                en: "AI-Driven Personalized Marketing",
+                zh: "AI驱动的个性化营销",
+                jp: "AI駆動のパーソナライズドマーケティング"
+            },
+            "social-section2-desc": {
+                en: "Artificial intelligence technology is revolutionizing the way of social media marketing. Through AI algorithms, companies can more accurately identify target audiences and provide personalized content recommendations. This precision marketing not only increases conversion rates but also significantly reduces customer acquisition costs.",
+                zh: "人工智能技术正在彻底改变社交媒体营销的方式。通过AI算法，企业可以更精准地识别目标受众，提供个性化的内容推荐。这种精准营销不仅提高了转化率，还显著降低了获客成本。",
+                jp: "人工知能技術はソーシャルメディアマーケティングの方法を革新的に変えています。AIアルゴリズムを通じて、企業はターゲットオーディエンスをより正確に特定し、パーソナライズされたコンテンツ推薦を提供できます。この精密マーケティングはコンバージョン率を向上させるだけでなく、顧客獲得コストも大幅に削減します。"
+            },
+            "social-section3-title": {
+                en: "Integration of Social Commerce",
+                zh: "社交电商的整合",
+                jp: "ソーシャルコマースの統合"
+            },
+            "social-section3-desc": {
+                en: "Social media platforms are becoming important sales channels. By integrating social commerce features, companies can complete the entire process from content display to sales conversion directly on the platform. This seamless shopping experience is changing consumer purchasing habits.",
+                zh: "社交媒体平台正在成为重要的销售渠道。通过整合社交电商功能，企业可以直接在平台上完成从内容展示到销售转化的全过程。这种无缝的购物体验正在改变消费者的购买习惯。",
+                jp: "ソーシャルメディアプラットフォームは重要な販売チャネルとなっています。ソーシャルコマース機能を統合することで、企業はコンテンツ表示から販売転換までの全プロセスをプラットフォーム上で直接完了できます。このシームレスなショッピング体験は消費者の購買習慣を変えています。"
+            },
+            "social-section4-title": {
+                en: "Exploration of Metaverse Marketing",
+                zh: "元宇宙营销的探索",
+                jp: "メタバースマーケティングの探求"
+            },
+            "social-section4-desc": {
+                en: "With the rise of the metaverse concept, companies are beginning to explore marketing opportunities in virtual worlds. By creating virtual stores and hosting virtual events, companies can establish unique brand experiences in the metaverse, attracting younger generations of consumers.",
+                zh: "随着元宇宙概念的兴起，企业开始探索虚拟世界中的营销机会。通过创建虚拟商店、举办虚拟活动，企业可以在元宇宙中建立独特的品牌体验，吸引年轻一代消费者。",
+                jp: "メタバースの概念の台頭に伴い、企業は仮想世界でのマーケティング機会を探求し始めています。仮想店舗の作成や仮想イベントの開催を通じて、企業はメタバースで独自のブランド体験を確立し、若い世代の消費者を惹きつけることができます。"
+            },
+            "social-section5-title": {
+                en: "Data Privacy and Compliance",
+                zh: "数据隐私与合规",
+                jp: "データプライバシーとコンプライアンス"
+            },
+            "social-section5-desc": {
+                en: "Against the backdrop of increasingly strict data privacy regulations, companies need to pay more attention to the compliant use of user data. Establishing transparent data collection and usage policies will become a key factor in the success of corporate social media marketing.",
+                zh: "在数据隐私法规日益严格的背景下，企业需要更加注重用户数据的合规使用。建立透明的数据收集和使用政策，将成为企业社交媒体营销成功的关键因素。",
+                jp: "データプライバシー規制が厳格化する中、企業はユーザーデータのコンプライアンス使用により注意を払う必要があります。透明性のあるデータ収集と使用ポリシーの確立は、企業のソーシャルメディアマーケティングの成功の鍵となる要素となります。"
+            },
+            "social-section6-title": {
+                en: "Future Outlook",
+                zh: "未来展望",
+                jp: "将来の展望"
+            },
+            "social-section6-desc": {
+                en: "Social media marketing will continue to evolve, and companies need to maintain flexibility to adapt to new trends and technologies in a timely manner. By integrating innovative technologies and focusing on user experience, companies can achieve greater success in social media marketing.",
+                zh: "社交媒体营销将继续演变，企业需要保持灵活性，及时适应新的趋势和技术。通过整合创新技术，注重用户体验，企业可以在社交媒体营销中取得更大的成功。",
+                jp: "ソーシャルメディアマーケティングは進化を続け、企業は新しいトレンドや技術に適時適応するための柔軟性を維持する必要があります。革新的な技術を統合し、ユーザー体験に焦点を当てることで、企業はソーシャルメディアマーケティングでより大きな成功を収めることができます。"
+            },
+            "social-tag1": {
+                en: "Social Media",
+                zh: "社交媒体",
+                jp: "ソーシャルメディア"
+            },
+            "social-tag2": {
+                en: "Digital Marketing",
+                zh: "数字营销",
+                jp: "デジタルマーケティング"
+            },
+            "social-tag3": {
+                en: "AI Marketing",
+                zh: "AI营销",
+                jp: "AIマーケティング"
+            },
+            "social-tag4": {
+                en: "Short Video",
+                zh: "短视频",
+                jp: "ショート動画"
+            },
+            "social-tag5": {
+                en: "Metaverse",
+                zh: "元宇宙",
+                jp: "メタバース"
+            }
+        }
     },
     'zh': {
         'nav-home': '首页',
@@ -198,13 +300,115 @@ const translations = {
         'team-title': '核心团队',
         'team-ceo-name': 'Andrea Lee',
         'team-ceo-position': '创始人兼首席增长官',
-        'team-ceo-desc': '文化的桥梁，增长的催化剂。Andrea Lee拥有超过12年的实战经验，帮助全球品牌进入并拓展日本和大中华区市场。她是一位罕见的营销战略家，精通东西方文化、语言和商业环境。',
+        'team-ceo-desc': '文化的桥梁，增长的催化剂。',
         'team-cto-name': 'Pherson Wong',
         'team-cto-position': '高级数字战略合伙人',
-        'team-cto-desc': '塑造日本和亚洲的数字增长。Pherson在数字营销行业拥有超过十年的领导经验，为我们的团队带来了独特的代理卓越性、跨境战略和尖端媒体技术专长的组合。',
+        'team-cto-desc': '塑造日本和亚洲的数字增长。',
         'team-cmo-name': 'Mattiuw Reynolds',
         'team-cmo-position': '高级数字营销战略师',
-        'team-cmo-desc': '推动日本和美国的全栈数字成功。Mattiuw Reynolds拥有超过15年的数字营销经验，专注于为日本和美国市场提供全栈B2B和B2C增长战略。'
+        'team-cmo-desc': '推动日本和美国的全栈数字成功。',
+        'news': {
+            title: {
+                en: "Latest News",
+                zh: "最新动态",
+                jp: "最新ニュース"
+            },
+            "social-title": {
+                en: "Social Media Marketing Trends 2025: New Opportunities for Business Promotion",
+                zh: "2025年社交媒体营销：企业推广的新趋势与机遇",
+                jp: "2025年ソーシャルメディアマーケティング：ビジネスプロモーションの新トレンドと機会"
+            },
+            "social-desc": {
+                en: "As social media continues to evolve, corporate marketing strategies in 2025 are undergoing significant changes. From short-form video content to AI-driven personalized marketing, businesses need to adapt to these new trends to maintain competitiveness in digital marketing.",
+                zh: "随着社交媒体的持续发展，2025年的企业营销策略正在经历重大变革。从短视频内容到AI驱动的个性化营销，企业需要适应这些新趋势才能在数字营销领域保持竞争力。",
+                jp: "ソーシャルメディアの継続的な発展に伴い、2025年の企業マーケティング戦略は大きな変革を遂げています。ショート動画コンテンツからAI駆動のパーソナライズドマーケティングまで、企業はデジタルマーケティング分野で競争力を維持するために、これらの新トレンドに適応する必要があります。"
+            },
+            "social-section1-title": {
+                en: "The Rise of Short Video Marketing",
+                zh: "短视频营销的崛起",
+                jp: "ショート動画マーケティングの台頭"
+            },
+            "social-section1-desc": {
+                en: "Short video platforms like TikTok, Xiaohongshu, and Douyin have become important marketing channels for businesses. Data shows that in 2025, user engagement with short video content is 300% higher than traditional text and image content. Companies need to master short video production techniques to create content that quickly captures user attention.",
+                zh: "短视频平台如TikTok、小红书和抖音已经成为企业营销的重要阵地。数据显示，2025年短视频内容的用户参与度比传统图文内容高出300%。企业需要掌握短视频制作技巧，创造能够快速抓住用户注意力的内容。",
+                jp: "TikTok、小紅書、抖音などのショート動画プラットフォームは、企業の重要なマーケティングチャネルとなっています。データによると、2025年にはショート動画コンテンツのユーザーエンゲージメントが従来のテキストや画像コンテンツより300%高いことが示されています。企業はユーザーの注目を素早く集めるコンテンツを作成するために、ショート動画制作技術を習得する必要があります。"
+            },
+            "social-section2-title": {
+                en: "AI-Driven Personalized Marketing",
+                zh: "AI驱动的个性化营销",
+                jp: "AI駆動のパーソナライズドマーケティング"
+            },
+            "social-section2-desc": {
+                en: "Artificial intelligence technology is revolutionizing the way of social media marketing. Through AI algorithms, companies can more accurately identify target audiences and provide personalized content recommendations. This precision marketing not only increases conversion rates but also significantly reduces customer acquisition costs.",
+                zh: "人工智能技术正在彻底改变社交媒体营销的方式。通过AI算法，企业可以更精准地识别目标受众，提供个性化的内容推荐。这种精准营销不仅提高了转化率，还显著降低了获客成本。",
+                jp: "人工知能技術はソーシャルメディアマーケティングの方法を革新的に変えています。AIアルゴリズムを通じて、企業はターゲットオーディエンスをより正確に特定し、パーソナライズされたコンテンツ推薦を提供できます。この精密マーケティングはコンバージョン率を向上させるだけでなく、顧客獲得コストも大幅に削減します。"
+            },
+            "social-section3-title": {
+                en: "Integration of Social Commerce",
+                zh: "社交电商的整合",
+                jp: "ソーシャルコマースの統合"
+            },
+            "social-section3-desc": {
+                en: "Social media platforms are becoming important sales channels. By integrating social commerce features, companies can complete the entire process from content display to sales conversion directly on the platform. This seamless shopping experience is changing consumer purchasing habits.",
+                zh: "社交媒体平台正在成为重要的销售渠道。通过整合社交电商功能，企业可以直接在平台上完成从内容展示到销售转化的全过程。这种无缝的购物体验正在改变消费者的购买习惯。",
+                jp: "ソーシャルメディアプラットフォームは重要な販売チャネルとなっています。ソーシャルコマース機能を統合することで、企業はコンテンツ表示から販売転換までの全プロセスをプラットフォーム上で直接完了できます。このシームレスなショッピング体験は消費者の購買習慣を変えています。"
+            },
+            "social-section4-title": {
+                en: "Exploration of Metaverse Marketing",
+                zh: "元宇宙营销的探索",
+                jp: "メタバースマーケティングの探求"
+            },
+            "social-section4-desc": {
+                en: "With the rise of the metaverse concept, companies are beginning to explore marketing opportunities in virtual worlds. By creating virtual stores and hosting virtual events, companies can establish unique brand experiences in the metaverse, attracting younger generations of consumers.",
+                zh: "随着元宇宙概念的兴起，企业开始探索虚拟世界中的营销机会。通过创建虚拟商店、举办虚拟活动，企业可以在元宇宙中建立独特的品牌体验，吸引年轻一代消费者。",
+                jp: "メタバースの概念の台頭に伴い、企業は仮想世界でのマーケティング機会を探求し始めています。仮想店舗の作成や仮想イベントの開催を通じて、企業はメタバースで独自のブランド体験を確立し、若い世代の消費者を惹きつけることができます。"
+            },
+            "social-section5-title": {
+                en: "Data Privacy and Compliance",
+                zh: "数据隐私与合规",
+                jp: "データプライバシーとコンプライアンス"
+            },
+            "social-section5-desc": {
+                en: "Against the backdrop of increasingly strict data privacy regulations, companies need to pay more attention to the compliant use of user data. Establishing transparent data collection and usage policies will become a key factor in the success of corporate social media marketing.",
+                zh: "在数据隐私法规日益严格的背景下，企业需要更加注重用户数据的合规使用。建立透明的数据收集和使用政策，将成为企业社交媒体营销成功的关键因素。",
+                jp: "データプライバシー規制が厳格化する中、企業はユーザーデータのコンプライアンス使用により注意を払う必要があります。透明性のあるデータ収集と使用ポリシーの確立は、企業のソーシャルメディアマーケティングの成功の鍵となる要素となります。"
+            },
+            "social-section6-title": {
+                en: "Future Outlook",
+                zh: "未来展望",
+                jp: "将来の展望"
+            },
+            "social-section6-desc": {
+                en: "Social media marketing will continue to evolve, and companies need to maintain flexibility to adapt to new trends and technologies in a timely manner. By integrating innovative technologies and focusing on user experience, companies can achieve greater success in social media marketing.",
+                zh: "社交媒体营销将继续演变，企业需要保持灵活性，及时适应新的趋势和技术。通过整合创新技术，注重用户体验，企业可以在社交媒体营销中取得更大的成功。",
+                jp: "ソーシャルメディアマーケティングは進化を続け、企業は新しいトレンドや技術に適時適応するための柔軟性を維持する必要があります。革新的な技術を統合し、ユーザー体験に焦点を当てることで、企業はソーシャルメディアマーケティングでより大きな成功を収めることができます。"
+            },
+            "social-tag1": {
+                en: "Social Media",
+                zh: "社交媒体",
+                jp: "ソーシャルメディア"
+            },
+            "social-tag2": {
+                en: "Digital Marketing",
+                zh: "数字营销",
+                jp: "デジタルマーケティング"
+            },
+            "social-tag3": {
+                en: "AI Marketing",
+                zh: "AI营销",
+                jp: "AIマーケティング"
+            },
+            "social-tag4": {
+                en: "Short Video",
+                zh: "短视频",
+                jp: "ショート動画"
+            },
+            "social-tag5": {
+                en: "Metaverse",
+                zh: "元宇宙",
+                jp: "メタバース"
+            }
+        }
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -279,17 +483,143 @@ const translations = {
         'team-title': 'コアチーム',
         'team-ceo-name': 'Andrea Lee',
         'team-ceo-position': '創業者兼最高成長責任者',
-        'team-ceo-desc': '文化的の架け橋、成長の触媒。Andrea Leeは12年以上の実践的な経験を持ち、グローバルブランドの日本と大中華圏への参入と拡大を支援してきました。東洋と西洋の文化、言語、ビジネス環境に精通した希少なマーケティング戦略家です。',
+        'team-ceo-desc': '文化的の架け橋、成長の触媒。',
         'team-cto-name': 'Pherson Wong',
         'team-cto-position': 'シニアデジタル戦略パートナー',
-        'team-cto-desc': '日本とアジア全体のデジタル成長を形作る。Phersonはデジタルマーケティング業界で10年以上のリーダーシップ経験を持ち、代理店の卓越性、クロスボーダー戦略、最先端のメディア技術の専門知識を組み合わせた希少な才能をチームにもたらしています。',
+        'team-cto-desc': '日本とアジア全体のデジタル成長を形作る。',
         'team-cmo-name': 'Mattiuw Reynolds',
         'team-cmo-position': 'シニアデジタルマーケティング戦略家',
-        'team-cmo-desc': '日本とアメリカのフルスタックデジタル成功を推進。Mattiuw Reynoldsは15年以上のデジタルマーケティング経験を持ち、日本とアメリカ市場向けのフルスタックB2BおよびB2C成長戦略を専門としています。'
+        'team-cmo-desc': '日本とアメリカのフルスタックデジタル成功を推進。',
+        'news': {
+            title: {
+                en: "Latest News",
+                zh: "最新动态",
+                jp: "最新ニュース"
+            },
+            "social-title": {
+                en: "Social Media Marketing Trends 2025: New Opportunities for Business Promotion",
+                zh: "2025年社交媒体营销：企业推广的新趋势与机遇",
+                jp: "2025年ソーシャルメディアマーケティング：ビジネスプロモーションの新トレンドと機会"
+            },
+            "social-desc": {
+                en: "As social media continues to evolve, corporate marketing strategies in 2025 are undergoing significant changes. From short-form video content to AI-driven personalized marketing, businesses need to adapt to these new trends to maintain competitiveness in digital marketing.",
+                zh: "随着社交媒体的持续发展，2025年的企业营销策略正在经历重大变革。从短视频内容到AI驱动的个性化营销，企业需要适应这些新趋势才能在数字营销领域保持竞争力。",
+                jp: "ソーシャルメディアの継続的な発展に伴い、2025年の企業マーケティング戦略は大きな変革を遂げています。ショート動画コンテンツからAI駆動のパーソナライズドマーケティングまで、企業はデジタルマーケティング分野で競争力を維持するために、これらの新トレンドに適応する必要があります。"
+            },
+            "social-section1-title": {
+                en: "The Rise of Short Video Marketing",
+                zh: "短视频营销的崛起",
+                jp: "ショート動画マーケティングの台頭"
+            },
+            "social-section1-desc": {
+                en: "Short video platforms like TikTok, Xiaohongshu, and Douyin have become important marketing channels for businesses. Data shows that in 2025, user engagement with short video content is 300% higher than traditional text and image content. Companies need to master short video production techniques to create content that quickly captures user attention.",
+                zh: "短视频平台如TikTok、小红书和抖音已经成为企业营销的重要阵地。数据显示，2025年短视频内容的用户参与度比传统图文内容高出300%。企业需要掌握短视频制作技巧，创造能够快速抓住用户注意力的内容。",
+                jp: "TikTok、小紅書、抖音などのショート動画プラットフォームは、企業の重要なマーケティングチャネルとなっています。データによると、2025年にはショート動画コンテンツのユーザーエンゲージメントが従来のテキストや画像コンテンツより300%高いことが示されています。企業はユーザーの注目を素早く集めるコンテンツを作成するために、ショート動画制作技術を習得する必要があります。"
+            },
+            "social-section2-title": {
+                en: "AI-Driven Personalized Marketing",
+                zh: "AI驱动的个性化营销",
+                jp: "AI駆動のパーソナライズドマーケティング"
+            },
+            "social-section2-desc": {
+                en: "Artificial intelligence technology is revolutionizing the way of social media marketing. Through AI algorithms, companies can more accurately identify target audiences and provide personalized content recommendations. This precision marketing not only increases conversion rates but also significantly reduces customer acquisition costs.",
+                zh: "人工智能技术正在彻底改变社交媒体营销的方式。通过AI算法，企业可以更精准地识别目标受众，提供个性化的内容推荐。这种精准营销不仅提高了转化率，还显著降低了获客成本。",
+                jp: "人工知能技術はソーシャルメディアマーケティングの方法を革新的に変えています。AIアルゴリズムを通じて、企業はターゲットオーディエンスをより正確に特定し、パーソナライズされたコンテンツ推薦を提供できます。この精密マーケティングはコンバージョン率を向上させるだけでなく、顧客獲得コストも大幅に削減します。"
+            },
+            "social-section3-title": {
+                en: "Integration of Social Commerce",
+                zh: "社交电商的整合",
+                jp: "ソーシャルコマースの統合"
+            },
+            "social-section3-desc": {
+                en: "Social media platforms are becoming important sales channels. By integrating social commerce features, companies can complete the entire process from content display to sales conversion directly on the platform. This seamless shopping experience is changing consumer purchasing habits.",
+                zh: "社交媒体平台正在成为重要的销售渠道。通过整合社交电商功能，企业可以直接在平台上完成从内容展示到销售转化的全过程。这种无缝的购物体验正在改变消费者的购买习惯。",
+                jp: "ソーシャルメディアプラットフォームは重要な販売チャネルとなっています。ソーシャルコマース機能を統合することで、企業はコンテンツ表示から販売転換までの全プロセスをプラットフォーム上で直接完了できます。このシームレスなショッピング体験は消費者の購買習慣を変えています。"
+            },
+            "social-section4-title": {
+                en: "Exploration of Metaverse Marketing",
+                zh: "元宇宙营销的探索",
+                jp: "メタバースマーケティングの探求"
+            },
+            "social-section4-desc": {
+                en: "With the rise of the metaverse concept, companies are beginning to explore marketing opportunities in virtual worlds. By creating virtual stores and hosting virtual events, companies can establish unique brand experiences in the metaverse, attracting younger generations of consumers.",
+                zh: "随着元宇宙概念的兴起，企业开始探索虚拟世界中的营销机会。通过创建虚拟商店、举办虚拟活动，企业可以在元宇宙中建立独特的品牌体验，吸引年轻一代消费者。",
+                jp: "メタバースの概念の台頭に伴い、企業は仮想世界でのマーケティング機会を探求し始めています。仮想店舗の作成や仮想イベントの開催を通じて、企業はメタバースで独自のブランド体験を確立し、若い世代の消費者を惹きつけることができます。"
+            },
+            "social-section5-title": {
+                en: "Data Privacy and Compliance",
+                zh: "数据隐私与合规",
+                jp: "データプライバシーとコンプライアンス"
+            },
+            "social-section5-desc": {
+                en: "Against the backdrop of increasingly strict data privacy regulations, companies need to pay more attention to the compliant use of user data. Establishing transparent data collection and usage policies will become a key factor in the success of corporate social media marketing.",
+                zh: "在数据隐私法规日益严格的背景下，企业需要更加注重用户数据的合规使用。建立透明的数据收集和使用政策，将成为企业社交媒体营销成功的关键因素。",
+                jp: "データプライバシー規制が厳格化する中、企業はユーザーデータのコンプライアンス使用により注意を払う必要があります。透明性のあるデータ収集と使用ポリシーの確立は、企業のソーシャルメディアマーケティングの成功の鍵となる要素となります。"
+            },
+            "social-section6-title": {
+                en: "Future Outlook",
+                zh: "未来展望",
+                jp: "将来の展望"
+            },
+            "social-section6-desc": {
+                en: "Social media marketing will continue to evolve, and companies need to maintain flexibility to adapt to new trends and technologies in a timely manner. By integrating innovative technologies and focusing on user experience, companies can achieve greater success in social media marketing.",
+                zh: "社交媒体营销将继续演变，企业需要保持灵活性，及时适应新的趋势和技术。通过整合创新技术，注重用户体验，企业可以在社交媒体营销中取得更大的成功。",
+                jp: "ソーシャルメディアマーケティングは進化を続け、企業は新しいトレンドや技術に適時適応するための柔軟性を維持する必要があります。革新的な技術を統合し、ユーザー体験に焦点を当てることで、企業はソーシャルメディアマーケティングでより大きな成功を収めることができます。"
+            },
+            "social-tag1": {
+                en: "Social Media",
+                zh: "社交媒体",
+                jp: "ソーシャルメディア"
+            },
+            "social-tag2": {
+                en: "Digital Marketing",
+                zh: "数字营销",
+                jp: "デジタルマーケティング"
+            },
+            "social-tag3": {
+                en: "AI Marketing",
+                zh: "AI营销",
+                jp: "AIマーケティング"
+            },
+            "social-tag4": {
+                en: "Short Video",
+                zh: "短视频",
+                jp: "ショート動画"
+            },
+            "social-tag5": {
+                en: "Metaverse",
+                zh: "元宇宙",
+                jp: "メタバース"
+            }
+        }
     }
 };
 
 // 切换语言
+function getTranslation(lang, key) {
+    // 支持 news-social-title 这种嵌套写法
+    if (translations[lang][key]) {
+        return translations[lang][key];
+    }
+    if (key.includes('-')) {
+        const parts = key.split('-');
+        let obj = translations[lang];
+        for (let i = 0; i < parts.length; i++) {
+            if (obj && obj[parts[i]]) {
+                obj = obj[parts[i]];
+            } else {
+                return null;
+            }
+        }
+        // 如果是对象（如 news: {title: {...}}），取当前语言
+        if (typeof obj === 'object' && obj[lang]) {
+            return obj[lang];
+        }
+        return obj;
+    }
+    return null;
+}
+
 function changeLanguage(lang) {
     // 保存语言选择到localStorage
     localStorage.setItem('selectedLanguage', lang);
@@ -297,12 +627,12 @@ function changeLanguage(lang) {
     // 更新所有带有data-translate属性的元素
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[lang] && translations[lang][key]) {
-            // 如果是标题，需要处理换行符
+        const value = getTranslation(lang, key);
+        if (value) {
             if (element.classList.contains('hero-title')) {
-                element.innerHTML = translations[lang][key].replace(/\n/g, '<br>');
+                element.innerHTML = value.replace(/\n/g, '<br>');
             } else {
-                element.textContent = translations[lang][key];
+                element.textContent = value;
             }
         }
     });

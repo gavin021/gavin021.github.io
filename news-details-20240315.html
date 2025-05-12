@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTION FOR - News</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ACTION FOR Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="news.html" class="active">News</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="language-selector">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="news.html" class="active">News</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- News Detail Content -->
+    <div class="news-detail-content">
+        <article class="news-post">
+            <div class="news-header">
+                <h1>Applications of Artificial Intelligence in Business</h1>
+                <div class="news-meta">
+                    <span>2024-03-15</span>
+                </div>
+            </div>
+            <div class="news-image">
+                <img src="images/news.webp" alt="AI in Business">
+            </div>
+            <div class="news-body">
+                <p>Artificial intelligence (AI) is profoundly transforming the way businesses operate. From customer service to data analytics, AI technologies are bringing unprecedented opportunities and challenges to enterprises.</p>
+                
+                <h2>AI in Customer Service</h2>
+                <p>Intelligent customer service systems can provide 24/7 support, greatly improving service efficiency and customer satisfaction. With natural language processing, AI can understand and respond to a wide range of customer inquiries.</p>
+                
+                <h2>AI in Data Analytics</h2>
+                <p>Businesses can leverage AI to analyze massive datasets, uncovering potential business opportunities and risks. Machine learning algorithms can predict market trends and help companies make more informed decisions.</p>
+                
+                <h2>AI in Process Automation</h2>
+                <p>AI-driven automation systems enable businesses to optimize workflows, reduce manual operations, and increase productivity. This not only saves costs but also minimizes the risk of human error.</p>
+                
+                <h2>Future Outlook</h2>
+                <p>As AI technology continues to advance, we can expect more innovative applications. Companies need to actively embrace AI and integrate it into their business strategies to maintain a competitive edge.</p>
+            </div>
+            <div class="news-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Technology</span>
+                <span class="tag">Innovation</span>
+                <span class="tag">Digital Transformation</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo-transparent.png" alt="ACTION FOR Logo" style="width: 120px; margin-bottom: 15px; filter: brightness(0) invert(1);">
+                <h4>ActionFor LLC</h4>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p>Phone: 080-7099-0700</p>
+                <p>Email: andrealee199202@gmail.com</p>
+                <p>Address: 3-16-1 Harumi, Chuo-ku, Tokyo Bayside Tower Harumi 2003</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#" class="cookie-settings-btn">Cookie Settings</a>
+                <a href="terms.html">Terms of Use</a>
+            </div>
+            <p>&copy; 2024 ACTION FOR. <span>All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Cookie Settings Modal -->
+    <div class="cookie-modal" id="cookie-settings">
+        <div class="cookie-modal-content">
+            <h2>Cookie Settings</h2>
+            <p>We use cookies to improve your browsing experience. Please select the types of cookies you want to accept:</p>
+            <div class="cookie-options">
+                <div class="cookie-option">
+                    <input type="checkbox" id="necessary-cookies" checked disabled>
+                    <label for="necessary-cookies">Necessary Cookies (Required)</label>
+                    <p>These cookies are essential for the website to function properly. They cannot be turned off.</p>
+                </div>
+                <div class="cookie-option">
+                    <input type="checkbox" id="analytics-cookies">
+                    <label for="analytics-cookies" data-translate="cookie-analytics">分析 Cookie</label>
+                    <p data-translate="cookie-analytics-desc">帮助我们了解访问者如何使用我们的网站。</p>
+                </div>
+                <div class="cookie-option">
+                    <input type="checkbox" id="marketing-cookies">
+                    <label for="marketing-cookies" data-translate="cookie-marketing">营销 Cookie</label>
+                    <p data-translate="cookie-marketing-desc">用于个性化广告和营销内容。</p>
+                </div>
+            </div>
+            <div class="cookie-buttons">
+                <button class="accept-all" data-translate="cookie-accept-all">接受所有</button>
+                <button class="save-settings" data-translate="cookie-save">保存设置</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
