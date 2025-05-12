@@ -1,5 +1,6 @@
-// 移动端菜单
+// 移动端菜单和语言切换初始化
 document.addEventListener('DOMContentLoaded', function() {
+    // 移动端菜单逻辑
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
@@ -25,14 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 语言切换
-    const languageSelector = document.querySelector('.language-selector select');
+    // 语言切换初始化
+    const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
-        // 应用保存的语言设置或使用默认语言（英文）
-        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        // 获取保存的语言设置或使用默认语言（中文）
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'zh';
         languageSelector.value = savedLanguage;
+        
+        // 应用保存的语言设置
         changeLanguage(savedLanguage);
 
+        // 添加语言切换事件监听
         languageSelector.addEventListener('change', function(e) {
             changeLanguage(e.target.value);
         });
@@ -224,8 +228,10 @@ const translations = {
                 en: "Metaverse",
                 zh: "元宇宙",
                 jp: "メタバース"
-            }
-        }
+            },
+            'partners-title': 'Partners'
+        },
+        'partners-title': 'Partners'
     },
     'zh': {
         'nav-home': '首页',
@@ -407,8 +413,10 @@ const translations = {
                 en: "Metaverse",
                 zh: "元宇宙",
                 jp: "メタバース"
-            }
-        }
+            },
+            'partners-title': '合作伙伴'
+        },
+        'partners-title': '合作伙伴'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -590,36 +598,34 @@ const translations = {
                 en: "Metaverse",
                 zh: "元宇宙",
                 jp: "メタバース"
-            }
-        }
+            },
+            'partners-title': 'パートナー'
+        },
+        'partners-title': 'パートナー'
     }
 };
 
-// 切换语言
+// 获取翻译
 function getTranslation(lang, key) {
-    // 支持 news-social-title 这种嵌套写法
-    if (translations[lang][key]) {
-        return translations[lang][key];
-    }
-    if (key.includes('-')) {
-        const parts = key.split('-');
-        let obj = translations[lang];
-        for (let i = 0; i < parts.length; i++) {
-            if (obj && obj[parts[i]]) {
-                obj = obj[parts[i]];
+    // 处理嵌套的翻译键
+    if (key.includes('.')) {
+        const parts = key.split('.');
+        let current = translations[lang];
+        for (const part of parts) {
+            if (current && current[part]) {
+                current = current[part];
             } else {
                 return null;
             }
         }
-        // 如果是对象（如 news: {title: {...}}），取当前语言
-        if (typeof obj === 'object' && obj[lang]) {
-            return obj[lang];
-        }
-        return obj;
+        return current;
     }
-    return null;
+    
+    // 处理普通翻译键
+    return translations[lang][key] || null;
 }
 
+// 切换语言
 function changeLanguage(lang) {
     // 保存语言选择到localStorage
     localStorage.setItem('selectedLanguage', lang);
@@ -628,6 +634,7 @@ function changeLanguage(lang) {
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         const value = getTranslation(lang, key);
+        
         if (value) {
             if (element.classList.contains('hero-title')) {
                 element.innerHTML = value.replace(/\n/g, '<br>');
@@ -638,26 +645,11 @@ function changeLanguage(lang) {
     });
     
     // 更新语言选择器的值
-    const languageSelector = document.querySelector('.language-selector select');
+    const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
         languageSelector.value = lang;
     }
 }
-
-// 页面加载时初始化语言
-document.addEventListener('DOMContentLoaded', function() {
-    // 获取保存的语言设置或使用默认语言
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'zh';
-    
-    // 设置语言选择器的初始值
-    const languageSelector = document.querySelector('.language-selector select');
-    if (languageSelector) {
-        languageSelector.value = savedLanguage;
-    }
-    
-    // 应用保存的语言设置
-    changeLanguage(savedLanguage);
-});
 
 // Cookie 设置相关功能
 function checkCookieConsent() {
