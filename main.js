@@ -116,7 +116,8 @@ const translations = {
         'contact-form-email': 'Your Email',
         'contact-form-phone': 'Your Phone',
         'contact-form-message': 'Message',
-        'contact-form-submit': 'Submit'
+        'contact-form-submit': 'Submit',
+        'team-title': 'Core Team'
     },
     'zh': {
         'nav-home': '首页',
@@ -186,7 +187,8 @@ const translations = {
         'contact-form-email': '您的邮箱',
         'contact-form-phone': '您的电话',
         'contact-form-message': '咨询内容',
-        'contact-form-submit': '提交'
+        'contact-form-submit': '提交',
+        'team-title': '核心团队'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -256,7 +258,8 @@ const translations = {
         'contact-form-email': 'メールアドレス',
         'contact-form-phone': '電話番号',
         'contact-form-message': 'お問い合わせ内容',
-        'contact-form-submit': '送信'
+        'contact-form-submit': '送信',
+        'team-title': 'コアチーム'
     }
 };
 
