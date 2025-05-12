@@ -2956,7 +2956,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     border-radius: 16px;
     box-shadow: 0 4px 18px rgba(39, 126, 71, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
     padding: 2.5rem 2rem 2rem 2rem;
-    max-width: 420px;
+    max-width: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
