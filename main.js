@@ -318,7 +318,7 @@ const translations = {
         'news-ai-ads-tag4': 'ChatGPT',
         'news-ai-ads-tag5': '数字营销',
         'news-ai-ads-title': 'AI对Google搜索广告的冲击',
-        'company-profile-representative-label': '代表者名：',
+        'company-profile-representative-label': '代表者：',
         'company-profile-representative': 'LI MIN'
     },
     'jp': {
@@ -454,7 +454,7 @@ const translations = {
         'news-ai-ads-tag4': 'ChatGPT',
         'news-ai-ads-tag5': 'デジタルマーケティング',
         'news-ai-ads-title': 'AIがGoogle検索広告に与えるインパクト',
-        'company-profile-representative-label': '代表者名：',
+        'company-profile-representative-label': '代表者：',
         'company-profile-representative': 'LI MIN'
     }
 };
