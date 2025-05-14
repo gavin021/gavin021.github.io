@@ -170,11 +170,17 @@ const translations = {
         'hero-slide3-title': 'Achieve sustained growth with tailored strategies',
         'company-profile-title': 'Company Profile',
         'company-profile-name-label': 'Company Name:',
-        'company-profile-name': '合同会社アクションフォー',
+        'company-profile-name': 'Action For LLC',
         'company-profile-en-label': 'English Name:',
         'company-profile-en': 'Action For LLC',
         'company-profile-date-label': 'Established:',
-        'company-profile-date': '2024/02'
+        'company-profile-date': '2024/02',
+        'news-ai-ads-tag1': 'AI',
+        'news-ai-ads-tag2': 'Google Ads',
+        'news-ai-ads-tag3': 'DeepSeek',
+        'news-ai-ads-tag4': 'ChatGPT',
+        'news-ai-ads-tag5': 'Digital Marketing',
+        'news-ai-ads-title': 'The Impact of AI on Google Search Ads'
     },
     'zh': {
         'nav-home': '首页',
@@ -302,7 +308,13 @@ const translations = {
         'company-profile-en-label': '英文名：',
         'company-profile-en': 'Action For LLC',
         'company-profile-date-label': '设立日：',
-        'company-profile-date': '2024/02'
+        'company-profile-date': '2024/02',
+        'news-ai-ads-tag1': 'AI',
+        'news-ai-ads-tag2': 'Google广告',
+        'news-ai-ads-tag3': 'DeepSeek',
+        'news-ai-ads-tag4': 'ChatGPT',
+        'news-ai-ads-tag5': '数字营销',
+        'news-ai-ads-title': 'AI对Google搜索广告的冲击'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -430,7 +442,13 @@ const translations = {
         'company-profile-en-label': '英語名：',
         'company-profile-en': 'Action For LLC',
         'company-profile-date-label': '設立日：',
-        'company-profile-date': '2024/02'
+        'company-profile-date': '2024/02',
+        'news-ai-ads-tag1': 'AI',
+        'news-ai-ads-tag2': 'Google広告',
+        'news-ai-ads-tag3': 'DeepSeek',
+        'news-ai-ads-tag4': 'ChatGPT',
+        'news-ai-ads-tag5': 'デジタルマーケティング',
+        'news-ai-ads-title': 'AIがGoogle検索広告に与えるインパクト'
     }
 };
 
@@ -671,4 +689,35 @@ document.addEventListener('DOMContentLoaded',function(){
     if(document.querySelector('.hero-slider')){
         initHeroSlider();
     }
-}); 
+});
+
+// 多语言切换新闻列表卡片摘要
+function updateNewsListSummaries(lang) {
+    // AI对Google搜索广告的冲击
+    var aiCard = document.querySelector('.news-item-content h3[data-translate="news-ai-ads-title"]')?.parentElement;
+    if (aiCard) {
+        aiCard.querySelectorAll('[data-translate^="news-ai-ads-summary"]').forEach(function(el){ el.style.display = 'none'; });
+        if(lang === 'en') {
+            var en = aiCard.querySelector('[data-translate="news-ai-ads-summary-en"]');
+            if(en) en.style.display = '';
+        } else if(lang === 'jp') {
+            var jp = aiCard.querySelector('[data-translate="news-ai-ads-summary-jp"]');
+            if(jp) jp.style.display = '';
+        } else {
+            var zh = aiCard.querySelector('[data-translate="news-ai-ads-summary"]');
+            if(zh) zh.style.display = '';
+        }
+    }
+}
+
+// 包装原有changeLanguage，确保新闻列表摘要也切换
+const origChangeLanguage = changeLanguage;
+changeLanguage = function(lang) {
+    origChangeLanguage(lang);
+    updateNewsListSummaries(lang);
+};
+// 页面初始加载时也调用一次
+(function(){
+    var lang = localStorage.getItem('selectedLanguage') || 'en';
+    updateNewsListSummaries(lang);
+})(); 
