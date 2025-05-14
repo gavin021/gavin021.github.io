@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 语言切换初始化
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
-        // 获取保存的语言设置或使用默认语言（中文）
+        // 获取保存的语言设置或使用默认语言（英文）
         const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
         languageSelector.value = savedLanguage;
         
@@ -167,7 +167,14 @@ const translations = {
         'terms-contact': 'Contact Us',
         'terms-contact-text': 'If you have any questions about these terms of use, please contact us by the following means:',
         'hero-slide2-title': 'Ready to scale your business in Asia?',
-        'hero-slide3-title': 'Achieve sustained growth with tailored strategies'
+        'hero-slide3-title': 'Achieve sustained growth with tailored strategies',
+        'company-profile-title': 'Company Profile',
+        'company-profile-name-label': 'Company Name:',
+        'company-profile-name': '合同会社アクションフォー',
+        'company-profile-en-label': 'English Name:',
+        'company-profile-en': 'Action For LLC',
+        'company-profile-date-label': 'Established:',
+        'company-profile-date': '2024/02'
     },
     'zh': {
         'nav-home': '首页',
@@ -288,7 +295,14 @@ const translations = {
         'terms-contact': '联系我们',
         'terms-contact-text': '如果您对这些使用条款有任何疑问，请通过以下方式联系我们：',
         'hero-slide2-title': '准备好在亚洲扩展您的业务了吗？',
-        'hero-slide3-title': '通过定制化策略实现持续增长'
+        'hero-slide3-title': '通过定制化策略实现持续增长',
+        'company-profile-title': '公司概要',
+        'company-profile-name-label': '公司名：',
+        'company-profile-name': '合同会社アクションフォー',
+        'company-profile-en-label': '英文名：',
+        'company-profile-en': 'Action For LLC',
+        'company-profile-date-label': '设立日：',
+        'company-profile-date': '2024/02'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -409,7 +423,14 @@ const translations = {
         'terms-contact': 'お問い合わせ',
         'terms-contact-text': 'これらの利用規約に関してご質問がある場合は、以下の方法でご連絡ください：',
         'hero-slide2-title': 'アジアでビジネスを拡大する準備はできていますか？',
-        'hero-slide3-title': '最適化された戦略で持続的な成長を実現'
+        'hero-slide3-title': '最適化された戦略で持続的な成長を実現',
+        'company-profile-title': '会社概要',
+        'company-profile-name-label': '会社名：',
+        'company-profile-name': '合同会社アクションフォー',
+        'company-profile-en-label': '英語名：',
+        'company-profile-en': 'Action For LLC',
+        'company-profile-date-label': '設立日：',
+        'company-profile-date': '2024/02'
     }
 };
 
