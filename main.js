@@ -170,7 +170,7 @@ const translations = {
         'hero-slide3-title': 'Achieve sustained growth with tailored strategies',
         'company-profile-title': 'Company Profile',
         'company-profile-name-label': 'Company Name:',
-        'company-profile-name': 'Action For LLC',
+        'company-profile-name': '合同会社アクションフォー',
         'company-profile-en-label': 'English Name:',
         'company-profile-en': 'Action For LLC',
         'company-profile-date-label': 'Established:',
