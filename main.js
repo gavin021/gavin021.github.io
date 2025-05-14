@@ -92,7 +92,7 @@ const translations = {
         'quick-links': 'Quick Links',
         'contact-title': 'Contact Us',
         'contact-phone-text': 'Phone: 080-7099-0700',
-        'contact-email-text': 'Email: andrealee199202@gmail.com',
+        'contact-email-text': 'Email: andrealee.actionfor@gmail.com',
         'contact-address-text': 'Address: Harumi 3-16-1 Bayside Tower Harumi 2003, Chuo-ku, Tokyo',
         'privacy-policy': 'Privacy Policy',
         'cookie-settings': 'Cookie Settings',
@@ -143,6 +143,7 @@ const translations = {
         'privacy-rights-4': 'Withdraw consent',
         'privacy-contact': 'Contact Us',
         'privacy-contact-text': 'If you have any questions about this privacy policy, please contact us by the following means:',
+        'privacy-email': 'Email: andrealee.actionfor@gmail.com',
         'privacy-email': 'Email: andrealee199202@gmail.com',
         'privacy-phone': 'Phone: 080-7099-0700',
         'privacy-address': 'Address: Harumi 3-16-1 Bayside Tower Harumi 2003, Chuo-ku, Tokyo',
@@ -180,7 +181,9 @@ const translations = {
         'news-ai-ads-tag3': 'DeepSeek',
         'news-ai-ads-tag4': 'ChatGPT',
         'news-ai-ads-tag5': 'Digital Marketing',
-        'news-ai-ads-title': 'The Impact of AI on Google Search Ads'
+        'news-ai-ads-title': 'The Impact of AI on Google Search Ads',
+        'company-profile-representative-label': 'Representative:',
+        'company-profile-representative': 'LI MIN'
     },
     'zh': {
         'nav-home': '首页',
@@ -314,7 +317,9 @@ const translations = {
         'news-ai-ads-tag3': 'DeepSeek',
         'news-ai-ads-tag4': 'ChatGPT',
         'news-ai-ads-tag5': '数字营销',
-        'news-ai-ads-title': 'AI对Google搜索广告的冲击'
+        'news-ai-ads-title': 'AI对Google搜索广告的冲击',
+        'company-profile-representative-label': '代表者：',
+        'company-profile-representative': 'LI MIN'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -448,7 +453,9 @@ const translations = {
         'news-ai-ads-tag3': 'DeepSeek',
         'news-ai-ads-tag4': 'ChatGPT',
         'news-ai-ads-tag5': 'デジタルマーケティング',
-        'news-ai-ads-title': 'AIがGoogle検索広告に与えるインパクト'
+        'news-ai-ads-title': 'AIがGoogle検索広告に与えるインパクト',
+        'company-profile-representative-label': '代表者：',
+        'company-profile-representative': 'LI MIN'
     }
 };
 
@@ -476,13 +483,11 @@ function getTranslation(lang, key) {
 function changeLanguage(lang) {
     // 保存语言选择到localStorage
     localStorage.setItem('selectedLanguage', lang);
-    
     // 更新所有带有data-translate属性的元素
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         const value = getTranslation(lang, key);
-        
-        if (value) {
+        if (typeof value === 'string') {
             if (element.classList.contains('hero-title')) {
                 element.innerHTML = value.replace(/\n/g, '<br>');
             } else {
@@ -490,7 +495,6 @@ function changeLanguage(lang) {
             }
         }
     });
-    
     // 更新语言选择器的值
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
