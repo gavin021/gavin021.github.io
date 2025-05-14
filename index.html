@@ -211,17 +211,47 @@
                     <a href="news-details-20250108.html" class="read-more" data-translate="news-read-more">阅读更多</a>
                 </div>
             </article>
-            <article class="blog-card">
+            <article class="blog-card" onclick="window.location.href='news-details-20241001.html'">
                 <div class="news-item-image">
-                    <img src="images/news.webp" alt="新闻图片">
+                    <img src="images/News-Deepseek.jpg" alt="AI对Google搜索广告的冲击">
                 </div>
                 <div class="blog-content">
-                    <h3 data-translate="news-ai-title" style="font-size: 1.3rem;">人工智能在商业中的应用</h3>
+                    <h3 data-translate="news-ai-ads-title" style="font-size: 1.3rem;"></h3>
                     <div class="blog-meta">
-                        <span>2024-03-15</span>
+                        <span>2024-10-01</span>
                     </div>
-                    <p data-translate="news-ai-desc">人工智能（AI）正在深刻改变着现代商业的运作方式。从自动化流程到智能决策支持，AI技术为企业带来了前所未有的机遇和挑战。</p>
-                    <a href="news-details-20240315.html?id=1" class="read-more" data-translate="news-read-more">阅读更多</a>
+                    <p data-translate="news-ai-ads-summary-zh">AI和大模型（如ChatGPT、DeepSeek）正在重塑Google搜索广告生态。自动化、智能投放和内容生成让广告主获得更高ROI，但也带来流量分流和竞价新挑战。</p>
+                    <p data-translate="news-ai-ads-summary-en" style="display:none;">AI and large models (such as ChatGPT, DeepSeek) are reshaping the Google Search Ads ecosystem. Automation, smart targeting, and content generation bring higher ROI for advertisers, but also introduce new challenges in traffic allocation and bidding.</p>
+                    <p data-translate="news-ai-ads-summary-jp" style="display:none;">AIや大規模言語モデル（ChatGPT、DeepSeekなど）はGoogle検索広告のエコシステムを再構築しています。自動化・スマート配信・コンテンツ生成によりROIが向上する一方、トラフィック分散や入札の新たな課題も生まれています。</p>
+                    <script>
+                    // 首页AI新闻卡片多语言概要切换
+                    function updateIndexNewsSummary(lang) {
+                        var aiCard = document.querySelector('.blog-card .blog-content h3[data-translate="news-ai-ads-title"]')?.parentElement;
+                        if (aiCard) {
+                            aiCard.querySelectorAll('[data-translate^="news-ai-ads-summary"]').forEach(function(el){ el.style.display = 'none'; });
+                            if(lang === 'en') {
+                                var en = aiCard.querySelector('[data-translate="news-ai-ads-summary-en"]');
+                                if(en) en.style.display = '';
+                            } else if(lang === 'jp') {
+                                var jp = aiCard.querySelector('[data-translate="news-ai-ads-summary-jp"]');
+                                if(jp) jp.style.display = '';
+                            } else {
+                                var zh = aiCard.querySelector('[data-translate="news-ai-ads-summary-zh"]');
+                                if(zh) zh.style.display = '';
+                            }
+                        }
+                    }
+                    // 页面加载和语言切换时调用
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var lang = localStorage.getItem('selectedLanguage') || 'zh';
+                        updateIndexNewsSummary(lang);
+                        var selector = document.getElementById('languageSelector');
+                        if(selector) selector.addEventListener('change', function(){
+                            updateIndexNewsSummary(this.value);
+                        });
+                    });
+                    </script>
+                    <a href="news-details-20241001.html" class="read-more" data-translate="news-read-more">阅读更多</a>
                 </div>
             </article>
         </div>
