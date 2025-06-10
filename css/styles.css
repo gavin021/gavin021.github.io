@@ -3285,3 +3285,19 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     left: 0;
     color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+    .service-card {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .service-card .card-image {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .service-card .card-content {
+        padding: 15px;
+    }
+}
