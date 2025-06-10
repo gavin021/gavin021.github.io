@@ -361,7 +361,7 @@ const translations = {
         'news-ai-title': 'ビジネスにおけるAIの応用',
         'news-ai-desc': '人工知能（AI）は現代のビジネス運営方法を大きく変えています。自動化プロセスからインテリジェントな意思決定支援まで、AI技術は企業に前例のない機会と課題をもたらしています。',
         'news-read-more': '続きを読む',
-        'partners-title': 'カスタマー',
+        'partners-title': '顧客事例',
         'quick-links': 'クイックリンク',
         'contact-title': 'お問い合わせ',
         'contact-phone-text': '電話：080-7099-0700',
