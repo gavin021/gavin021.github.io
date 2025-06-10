@@ -192,7 +192,12 @@ const translations = {
         'news-ai-ads-tag5': 'Digital Marketing',
         'news-ai-ads-title': 'The Impact of AI on Google Search Ads',
         'company-profile-representative-label': 'Representative:',
-        'company-profile-representative': 'LI MIN'
+        'company-profile-representative': 'LI MIN',
+        'service-overseas-contract-detail': 'All transactions are completed through domestic contracts with Japanese companies, ensuring safe and reliable business. We minimize legal risks abroad and help you expand efficiently.',
+        'service-overseas-distributor-detail': 'We build optimal sales channels based on deep local market knowledge, utilizing retail, e-commerce, and wholesale to maximize your sales opportunities.',
+        'service-overseas-label-detail': 'We ensure ingredient labeling and packaging fully comply with local regulations. Our support covers food safety, cosmetics, and pharmaceutical laws for smooth market entry.',
+        'service-overseas-marketing-detail': 'We develop effective marketing strategies based on local trends, including KOL collaboration, social media marketing, and event planning to boost brand awareness and sales.',
+        'service-overseas-exhibition-detail': 'We support participation in local exhibitions and act as your business negotiation agent, leveraging local business customs to help you present and negotiate effectively and acquire new clients.'
     },
     'zh': {
         'nav-home': '首页',
@@ -338,7 +343,12 @@ const translations = {
         'news-ai-ads-tag5': '数字营销',
         'news-ai-ads-title': 'AI对Google搜索广告的冲击',
         'company-profile-representative-label': '代表者：',
-        'company-profile-representative': 'LI MIN'
+        'company-profile-representative': 'LI MIN',
+        'service-overseas-contract-detail': '通过与日本企业的国内合同完成，确保交易安全可靠。在最大程度降低海外法律风险的同时，实现高效的业务拓展。',
+        'service-overseas-distributor-detail': '充分了解当地市场特性，构建最优销售渠道。结合零售、电子商务、批发等多元渠道，创造最大销售机会。',
+        'service-overseas-label-detail': '实现完全符合当地法规的成分标识和包装。支持食品卫生法、化妆品法规、医药品法规等各行业规范，助力顺利进入市场。',
+        'service-overseas-marketing-detail': '结合当地趋势，制定高效的市场营销战略。通过KOL合作、社交媒体营销、活动策划等多元方式提升品牌认知和销售。',
+        'service-overseas-exhibition-detail': '提供当地展会参展支持及商务洽谈代理。基于对当地商务习惯的理解，助力高效展示与谈判，开拓新客户。'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -484,7 +494,12 @@ const translations = {
         'news-ai-ads-tag5': 'デジタルマーケティング',
         'news-ai-ads-title': 'AIがGoogle検索広告に与えるインパクト',
         'company-profile-representative-label': '代表者：',
-        'company-profile-representative': 'LI MIN'
+        'company-profile-representative': 'LI MIN',
+        'service-overseas-contract-detail': '日本企業との国内契約で完結するため、安心して取引が可能です。現地での法的リスクを最小限に抑えながら、効率的なビジネス展開を実現します。',
+        'service-overseas-distributor-detail': '現地の市場特性を熟知した上で、最適な販売チャネルを構築します。小売店、ECプラットフォーム、卸売業者など、多様なチャネルを活用し、最大の販売機会を創出します。',
+        'service-overseas-label-detail': '現地の法規制に完全準拠した成分表示とパッケージングを実現します。食品衛生法、化粧品規制、医薬品規制など、各業界の規制に対応し、スムーズな市場参入をサポートします。',
+        'service-overseas-marketing-detail': '現地のトレンドを踏まえた効果的なマーケティング戦略を展開します。KOLとの協業、SNSマーケティング、イベント企画など、多角的なアプローチで製品の認知度と売上を向上させます。',
+        'service-overseas-exhibition-detail': '現地の展示会への出展支援や商談代行を行います。現地のビジネス慣習を理解した上で、効果的なプレゼンテーションと交渉を実施し、新規取引先の開拓をサポートします。'
     }
 };
 

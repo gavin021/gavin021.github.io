@@ -3228,6 +3228,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     list-style: none;
     padding: 0;
     margin: 1.5rem 0;
+    font-size: 1.15rem;
 }
 
 .vertical-list li {
