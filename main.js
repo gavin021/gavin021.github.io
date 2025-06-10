@@ -766,6 +766,6 @@ changeLanguage = function(lang) {
 };
 // 页面初始加载时也调用一次
 (function(){
-    var lang = localStorage.getItem('selectedLanguage') || 'en';
+    var lang = localStorage.getItem('selectedLanguage') || 'jp';
     updateNewsListSummaries(lang);
 })(); 

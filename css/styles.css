@@ -122,41 +122,33 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 0;
-    padding-top: 80px;
+    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
 }
 
-/* 其他页面的hero高度 */
-.about-page .hero,
-.services-page .hero,
-.news-page .hero,
-.terms-page .hero,
-.privacy-page .hero,
-.contact-page .hero {
-    height: 200px;
-    margin-top: 60px;
-    padding-top: 0;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
-    max-width: 800px;
-    padding: 2rem;
-    animation: fadeInUp 1s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    z-index: 2;
     text-align: center;
+    color: #fff;
+    padding: 2rem;
+    max-width: 800px;
 }
 
 .hero-title {
@@ -170,16 +162,49 @@ body {
     font-weight: bold;
 }
 
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 3rem;
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
-    position: relative;
-    text-align: center;
-    width: 100%;
+/* 子页面 Hero 样式 */
+.about-page .hero,
+.services-page .hero,
+.news-page .hero,
+.terms-page .hero,
+.privacy-page .hero,
+.contact-page .hero {
+    height: 200px !important;
+    margin-top: 60px;
+    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
 }
 
-/* 移动端适配 */
+.about-page .hero-content,
+.services-page .hero-content,
+.news-page .hero-content,
+.terms-page .hero-content,
+.privacy-page .hero-content,
+.contact-page .hero-content {
+    padding: 1rem;
+}
+
+.about-page .hero h1,
+.services-page .hero h1,
+.news-page .hero h1,
+.terms-page .hero h1,
+.privacy-page .hero h1,
+.contact-page .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 视频背景样式 */
+.about-page .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
     /* 首页保持全屏 */
     body:not(.about-page):not(.services-page):not(.news-page):not(.terms-page):not(.privacy-page):not(.contact-page) .hero {
@@ -193,16 +218,21 @@ body {
     .terms-page .hero,
     .privacy-page .hero,
     .contact-page .hero {
-        height: 150px;
+        height: 150px !important;
         margin-top: 60px;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
     }
     
-    .logo img {
-        height: 40px;
+    .about-page .hero h1,
+    .services-page .hero h1,
+    .news-page .hero h1,
+    .terms-page .hero h1,
+    .privacy-page .hero h1,
+    .contact-page .hero h1 {
+        font-size: 2rem;
     }
 }
 
@@ -1073,55 +1103,82 @@ body {
 
 /* 公司简介部分 */
 .company-profile {
-    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.profile-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.profile-item {
+.profile-card {
     background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 40px;
+    width: 100%;
 }
 
-.profile-item:hover {
-    transform: translateY(-5px);
+.profile-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
-.profile-item i {
-    font-size: 2.5rem;
-    color: #277E47;
-    margin-bottom: 1rem;
+.profile-table tr {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #eee;
+    padding: 24px 0;
 }
 
-.profile-item h3 {
-    color: #333;
-    margin-bottom: 0.5rem;
+.profile-table tr:first-child {
+    padding-top: 0;
 }
 
-.profile-item p {
+.profile-table tr:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.profile-table th {
+    width: 180px;
+    text-align: left;
     color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-right: 24px;
 }
 
-.company-description {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+.profile-table td {
+    flex: 1;
 }
 
-.company-description p {
-    line-height: 1.8;
-    color: #444;
+.profile-table td span {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 24px;
+    }
+
+    .profile-table tr {
+        padding: 20px 0;
+    }
+
+    .profile-table th {
+        width: 140px;
+        font-size: 0.85rem;
+        padding-right: 16px;
+    }
+
+    .profile-table td span {
+        font-size: 1.1rem;
+    }
 }
 
 /* 团队成员部分 */
@@ -1137,54 +1194,89 @@ body {
 }
 
 .team-member {
-    background: white;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.team-member img {
-    width: 100%;
+.team-member .member-image {
     height: 300px;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
 }
 
-.team-member h3 {
-    color: #333;
-    margin: 1rem 0 0.5rem;
-    padding: 0 1.5rem;
+.team-member .member-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.team-member .member-image h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+.team-member .member-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-member .position {
-    color: #277E47;
+    color: var(--primary-color);
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 0 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .team-member .description {
     color: #666;
-    padding: 0 1.5rem 1.5rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .team-member .view-details {
-    display: block;
-    text-align: right;
-    padding: 0 1.5rem 1.5rem;
-    color: #277E47;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .team-member .view-details:hover {
-    color: #1a4d2e;
+    color: var(--secondary-color);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* 响应式设计 */
@@ -1201,35 +1293,46 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .team-member img {
+    .team-member .member-image {
         height: 250px;
     }
 }
 
 /* 页面标题样式 */
 .about-page .hero {
-    height: 200px;
-    margin-top: 60px;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .about-page .hero-content {
-    padding: 1rem;
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .about-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .about-page .hero {
-        height: 200px;
-    }
-
-    .about-page .hero h1 {
-        font-size: 2rem;
-    }
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 /* 联系我们页面样式 */
@@ -3300,4 +3403,61 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     .service-card .card-content {
         padding: 15px;
     }
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-card .news-item-image {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.blog-card .news-item-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.blog-card .news-item-image h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+.blog-card .blog-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

@@ -47,8 +47,9 @@
 
     <!-- 页面标题 -->
     <header class="hero">
-        <div class="shooting-star"></div>
-        <div class="shooting-star"></div>
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/bg.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
             <h1 class="hero-title" data-translate="about-title">About Us</h1>
         </div>
@@ -71,23 +72,23 @@
         <!-- 公司概要标题 -->
         <h2 class="section-title" data-translate="company-profile-title" style="text-align:left; margin: 60px 0 32px 0; letter-spacing: 1px;">公司概要</h2>
         <!-- 公司信息卡片 -->
-        <section class="company-profile" style="display: flex; justify-content: center;">
-            <div style="background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px 0; width: 100%; max-width: 100%; margin-bottom: 40px;">
-                <table style="width: 90%; margin: 0 auto; border-collapse: separate; border-spacing: 0 12px; font-size: 1.1rem;">
+        <section class="company-profile">
+            <div class="profile-card">
+                <table class="profile-table">
                     <tr>
-                        <th style="text-align:right; width: 180px; font-weight:600; padding-right: 24px;" data-translate="company-profile-name-label">公司名：</th>
+                        <th data-translate="company-profile-name-label">公司名</th>
                         <td><span data-translate="company-profile-name">合同会社アクションフォー</span></td>
                     </tr>
                     <tr>
-                        <th style="text-align:right; font-weight:600; padding-right: 24px;" data-translate="company-profile-en-label">英文名：</th>
+                        <th data-translate="company-profile-en-label">英文名</th>
                         <td><span data-translate="company-profile-en">Action For LLC</span></td>
                     </tr>
                     <tr>
-                        <th style="text-align:right; font-weight:600; padding-right: 24px;" data-translate="company-profile-date-label">设立日：</th>
+                        <th data-translate="company-profile-date-label">设立日</th>
                         <td><span data-translate="company-profile-date">2024/02</span></td>
                     </tr>
                     <tr>
-                        <th style="text-align:right; font-weight:600; padding-right: 24px;" data-translate="company-profile-representative-label">代表者名：</th>
+                        <th data-translate="company-profile-representative-label">代表者名</th>
                         <td><span data-translate="company-profile-representative">LI MIN</span></td>
                     </tr>
                 </table>
@@ -99,25 +100,34 @@
             <h2 class="section-title" data-translate="team-title">核心团队</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="images/emp1.jpg" alt="LI MIN">
-                    <h3 data-translate="team-ceo-name">LI MIN</h3>
-                    <div class="position" data-translate="team-ceo-position">Founder & Chief Growth Officer</div>
-                    <p class="description" data-translate="team-ceo-desc">A Bridge Between Cultures. </p>
-                    <a href="team-andrea.html" class="view-details" data-translate="view-details">View Details</a>
+                    <div class="member-image" style="background-image: url('images/emp1.jpg');">
+                        <h3 data-translate="team-ceo-name">LI MIN</h3>
+                    </div>
+                    <div class="member-content">
+                        <div class="position" data-translate="team-ceo-position">Founder & Chief Growth Officer</div>
+                        <p class="description" data-translate="team-ceo-desc">A Bridge Between Cultures. </p>
+                        <a href="team-andrea.html" class="view-details" data-translate="view-details">View Details</a>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/nophoto.webp" alt="Pherson Wong">
-                    <h3 data-translate="team-cto-name">Pherson Wong</h3>
-                    <div class="position" data-translate="team-cto-position">Senior Digital Strategy Partner</div>
-                    <p class="description" data-translate="team-cto-desc">Shaping Digital Growth Across Japan and Asia. </p>
-                    <a href="team-pherson.html" class="view-details" data-translate="view-details">View Details</a>
+                    <div class="member-image" style="background-image: url('images/nophoto.webp');">
+                        <h3 data-translate="team-cto-name">Pherson Wong</h3>
+                    </div>
+                    <div class="member-content">
+                        <div class="position" data-translate="team-cto-position">Senior Digital Strategy Partner</div>
+                        <p class="description" data-translate="team-cto-desc">Shaping Digital Growth Across Japan and Asia. </p>
+                        <a href="team-pherson.html" class="view-details" data-translate="view-details">View Details</a>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/nophoto.webp" alt="Matthew Reynolds">
-                    <h3 data-translate="team-cmo-name">Matthew Reynolds</h3>
-                    <div class="position" data-translate="team-cmo-position">Senior Digital Marketing Strategist</div>
-                    <p class="description" data-translate="team-cmo-desc">Driving Full-Stack Digital Success Across Japan and the U.S. </p>
-                    <a href="team-matthew.html" class="view-details" data-translate="view-details">View Details</a>
+                    <div class="member-image" style="background-image: url('images/nophoto.webp');">
+                        <h3 data-translate="team-cmo-name">Matthew Reynolds</h3>
+                    </div>
+                    <div class="member-content">
+                        <div class="position" data-translate="team-cmo-position">Senior Digital Marketing Strategist</div>
+                        <p class="description" data-translate="team-cmo-desc">Driving Full-Stack Digital Success Across Japan and the U.S. </p>
+                        <a href="team-matthew.html" class="view-details" data-translate="view-details">View Details</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -128,7 +138,6 @@
         <div class="footer-content">
             <div class="footer-section">
                 <img src="images/logo-transparent.png" alt="ACTION FOR Logo" style="width: 120px; margin-bottom: 15px; filter: brightness(0) invert(1);">
-                <h4>Action For LLC</h4>
                 <div class="social-links">
                     <a href="https://youtube.com" target="_blank" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
