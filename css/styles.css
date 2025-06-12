@@ -655,7 +655,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -1652,7 +1651,6 @@ body {
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 1fr;
-        padding: 1rem;
     }
 
     .blog-header h1 {
@@ -3460,4 +3458,9 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .blog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 为 .service-card .card-content p 添加荧光笔下划线样式 */
+.service-card .card-content p {
+    margin-bottom: 10px; /* 增加与 .service-detail 的间距 */
 }
