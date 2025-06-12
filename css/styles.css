@@ -3358,11 +3358,11 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 
 .highlight-text {
-    background: linear-gradient(transparent 60%, #FFD700 40%);
+    background: linear-gradient(transparent 60%, #ffeb3b 40%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: inline;
     padding: 0 2px;
+    display: inline;
 }
 
 .vertical-list {
