@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 语言切换初始化
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
-        // 获取保存的语言设置或使用默认语言（英文）
-        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        // 获取保存的语言设置或使用默认语言（日语）
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'jp';
         languageSelector.value = savedLanguage;
         
         // 应用保存的语言设置
