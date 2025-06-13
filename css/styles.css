@@ -715,16 +715,33 @@ body {
 }
 
 .read-more {
+    align-self: flex-end;
     color: #277E47;
     text-decoration: none;
     font-weight: 500;
-    display: inline-block;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .read-more:hover {
     color: #277E47;
     opacity: 0.8;
+}
+
+.read-more::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.read-more:hover::after {
+    transform: translateX(5px);
+    color: var(--secondary-color);
 }
 
 /* 页脚样式 */
@@ -1766,7 +1783,7 @@ body {
 }
 
 .read-more {
-    align-self: flex-start;
+    align-self: flex-end;
     color: #277E47;
     text-decoration: none;
     font-weight: 500;
@@ -2697,20 +2714,22 @@ body {
 }
 
 .service-category-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
-    text-align: left;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-category-intro {
-    font-size: 1.15rem;
-    color: #555;
-    text-align: left;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services-grid {
@@ -2862,7 +2881,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -3328,8 +3347,11 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .vertical-list {
     list-style: none;
     padding: 0;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     font-size: 1.15rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .vertical-list li {

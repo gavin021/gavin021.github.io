@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +16,11 @@
                 <img src="images/logo.png" alt="ACTION FOR Logo">
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="news.html" class="active">News</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="index.html" data-translate="nav-home">Home</a>
+                <a href="about.html" data-translate="nav-about">About Us</a>
+                <a href="services.html" data-translate="nav-services">Services</a>
+                <a href="news.html" class="active" data-translate="nav-news">News</a>
+                <a href="contact.html" data-translate="nav-contact">Contact Us</a>
             </div>
             <div class="language-selector">
                 <select id="languageSelector">
@@ -36,11 +36,11 @@
             </button>
         </div>
         <div class="mobile-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="news.html" class="active">News</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="index.html" data-translate="nav-home">Home</a>
+            <a href="about.html" data-translate="nav-about">About Us</a>
+            <a href="services.html" data-translate="nav-services">Services</a>
+            <a href="news.html" class="active" data-translate="nav-news">News</a>
+            <a href="contact.html" data-translate="nav-contact">Contact Us</a>
         </div>
     </nav>
 
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="news-image">
-                <img src="images/news.webp" alt="AI in Business">
+                <img src="images/ai.png" alt="AI in Business">
             </div>
             <div class="news-body">
                 <p>Artificial intelligence (AI) is profoundly transforming the way businesses operate. From customer service to data analytics, AI technologies are bringing unprecedented opportunities and challenges to enterprises.</p>
@@ -99,60 +99,79 @@
                 </div>
             </div>
             <div class="footer-section">
-                <h4>Quick Links</h4>
+                <h4 data-translate="quick-links">Quick Links</h4>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                    <li><a href="services.html" data-translate="nav-services">Services</a></li>
+                    <li><a href="news.html" data-translate="nav-news">News</a></li>
+                    <li><a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contact Information</h4>
-                <p>Phone: 080-7099-0700</p>
-                <p>Email: andrealee.actionfor@gmail.com</p>
-                <p>Address: 3-16-1 Harumi, Chuo-ku, Tokyo Bayside Tower Harumi 2003</p>
+                <h4 data-translate="contact-title">Contact Information</h4>
+                <p data-translate="contact-phone-text">Phone: 080-7099-0700</p>
+                <p data-translate="contact-email-text">Email: andrealee.actionfor@gmail.com</p>
+                <p data-translate="contact-address-text">Address: 3-16-1 Harumi, Chuo-ku, Tokyo Bayside Tower Harumi 2003</p>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="#" class="cookie-settings-btn">Cookie Settings</a>
-                <a href="terms.html">Terms of Use</a>
+                <a href="privacy.html" data-translate="privacy-policy">Privacy Policy</a>
+                <a href="#" class="cookie-settings-btn" data-translate="cookie-settings">Cookie Settings</a>
+                <a href="terms.html" data-translate="terms">Terms of Use</a>
             </div>
-            <p>&copy; 2024 ACTION FOR. <span>All rights reserved.</span></p>
+            <p>&copy; 2024 ACTION FOR. <span data-translate="all-rights">All rights reserved.</span></p>
         </div>
     </footer>
 
     <!-- Cookie Settings Modal -->
     <div class="cookie-modal" id="cookie-settings">
         <div class="cookie-modal-content">
-            <h2>Cookie Settings</h2>
-            <p>We use cookies to improve your browsing experience. Please select the types of cookies you want to accept:</p>
+            <h2 data-translate="cookie-settings-title">Cookie Settings</h2>
+            <p data-translate="cookie-settings-desc">We use cookies to improve your browsing experience. Please select the types of cookies you want to accept:</p>
             <div class="cookie-options">
                 <div class="cookie-option">
                     <input type="checkbox" id="necessary-cookies" checked disabled>
-                    <label for="necessary-cookies">Necessary Cookies (Required)</label>
-                    <p>These cookies are essential for the website to function properly. They cannot be turned off.</p>
+                    <label for="necessary-cookies" data-translate="cookie-necessary">Necessary Cookies (Required)</label>
+                    <p data-translate="cookie-necessary-desc">These cookies are essential for the website to function properly. They cannot be turned off.</p>
                 </div>
                 <div class="cookie-option">
                     <input type="checkbox" id="analytics-cookies">
-                    <label for="analytics-cookies" data-translate="cookie-analytics">分析 Cookie</label>
-                    <p data-translate="cookie-analytics-desc">帮助我们了解访问者如何使用我们的网站。</p>
+                    <label for="analytics-cookies" data-translate="cookie-analytics">Analytics Cookies</label>
+                    <p data-translate="cookie-analytics-desc">Help us understand how visitors use our website.</p>
                 </div>
                 <div class="cookie-option">
                     <input type="checkbox" id="marketing-cookies">
-                    <label for="marketing-cookies" data-translate="cookie-marketing">营销 Cookie</label>
-                    <p data-translate="cookie-marketing-desc">用于个性化广告和营销内容。</p>
+                    <label for="marketing-cookies" data-translate="cookie-marketing">Marketing Cookies</label>
+                    <p data-translate="cookie-marketing-desc">Used for personalized advertising and marketing content.</p>
                 </div>
             </div>
             <div class="cookie-buttons">
-                <button class="accept-all" data-translate="cookie-accept-all">接受所有</button>
-                <button class="save-settings" data-translate="cookie-save">保存设置</button>
+                <button class="accept-all" data-translate="cookie-accept-all">Accept All</button>
+                <button class="save-settings" data-translate="cookie-save">Save Settings</button>
             </div>
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // 确保在页面加载完成后初始化语言切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageSelector = document.getElementById('languageSelector');
+            if (languageSelector) {
+                // 获取保存的语言设置或使用默认语言（英文）
+                const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+                languageSelector.value = savedLanguage;
+                
+                // 应用保存的语言设置
+                changeLanguage(savedLanguage);
+
+                // 添加语言切换事件监听
+                languageSelector.addEventListener('change', function(e) {
+                    changeLanguage(e.target.value);
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
