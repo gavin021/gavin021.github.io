@@ -798,20 +798,6 @@ body {
     opacity: 0.8;
 }
 
-.read-more::after {
-    content: '\f054';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 0.8rem;
-    transition: transform 0.3s ease;
-    color: var(--primary-color);
-}
-
-.read-more:hover::after {
-    transform: translateX(5px);
-    color: var(--secondary-color);
-}
-
 /* 页脚样式 */
 .footer {
     background: var(--primary-color);
@@ -1334,6 +1320,8 @@ body {
 }
 
 .team-member .view-details {
+    align-self: flex-end;
+    margin-left: auto;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
@@ -1831,12 +1819,9 @@ body {
 }
 
 .read-more::after {
-    content: '\f054';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 0.8rem;
-    transition: transform 0.3s ease;
-    color: var(--primary-color);
+    /* removed arrow */
+    content: '';
+    display: none;
 }
 
 .read-more:hover::after {
@@ -1982,12 +1967,9 @@ body {
 }
 
 .read-more::after {
-    content: '\f054';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 0.8rem;
-    transition: transform 0.3s ease;
-    color: #277E47;
+    /* removed arrow */
+    content: '';
+    display: none;
 }
 
 .read-more:hover::after {
