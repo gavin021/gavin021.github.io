@@ -220,7 +220,7 @@ body {
     width: 100%;
     max-width: 800px;
     color: #fff;
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     font-weight: bold;
 }
 
@@ -281,16 +281,6 @@ body {
     padding: 0 20px;
 }
 
-.about-page .hero h1,
-.services-page .hero h1,
-.news-page .hero h1,
-.terms-page .hero h1,
-.privacy-page .hero h1,
-.contact-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
 /* 视频背景样式 */
 .about-page .hero-video,
 .services-page .hero-video {
@@ -334,26 +324,12 @@ body {
     padding: 0 20px;
 }
 
-.about-page .hero h1,
-.services-page .hero h1 {
-    color: #FFFFFF;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    letter-spacing: 0.5px;
-}
-
 @media (max-width: 768px) {
     .about-page .hero,
     .services-page .hero {
         height: 40vh;
     }
 
-    .about-page .hero h1,
-    .services-page .hero h1 {
-        font-size: 2.5rem;
-    }
 }
 
 /* 响应式设计 */
@@ -373,19 +349,7 @@ body {
         height: 150px !important;
         margin-top: 60px;
     }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
     
-    .about-page .hero h1,
-    .services-page .hero h1,
-    .news-page .hero h1,
-    .terms-page .hero h1,
-    .privacy-page .hero h1,
-    .contact-page .hero h1 {
-        font-size: 2rem;
-    }
 }
 
 /* 星空效果 */
@@ -456,10 +420,11 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 3rem;
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     position: relative;
+    letter-spacing: 0.5px;
 }
 
 /* 其他页面的标题样式 */
@@ -486,14 +451,6 @@ body {
     max-width: 800px;
     padding: 2rem;
     animation: fadeInUp 1s ease-out;
-}
-
-.privacy-page .hero h1,
-.terms-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--white);
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
 }
 
 .hero-title {
@@ -826,6 +783,7 @@ body {
 
 .read-more {
     align-self: flex-end;
+    margin-left: auto;
     color: #277E47;
     text-decoration: none;
     font-weight: 500;
@@ -1111,17 +1069,6 @@ body {
     .privacy-page .hero,
     .terms-page .hero {
         height: 150px;
-    }
-
-    .hero h1,
-    .about-page .hero h1,
-    .contact-page .hero h1,
-    .services-page .hero h1,
-    .blog-page .hero h1,
-    .news-page .hero h1,
-    .privacy-page .hero h1,
-    .terms-page .hero h1 {
-        font-size: 2rem;
     }
 
     .logo img {
@@ -1453,14 +1400,6 @@ body {
     padding: 0 20px;
 }
 
-.about-page .hero h1 {
-    color: #FFFFFF;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    letter-spacing: 0.5px;
-}
 
 /* 联系我们页面样式 */
 .contact-page .hero {
@@ -1470,11 +1409,6 @@ body {
 
 .contact-page .hero-content {
     padding: 1rem;
-}
-
-.contact-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .contact-content {
@@ -1538,9 +1472,6 @@ body {
         height: 200px;
     }
 
-    .contact-page .hero h1 {
-        font-size: 2rem;
-    }
 
     .contact-content {
         padding: 2rem 1rem;
@@ -1561,10 +1492,6 @@ body {
     padding: 1rem;
 }
 
-.services-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
 
 .services-content {
     max-width: 1200px;
@@ -1683,9 +1610,6 @@ body {
         height: 200px;
     }
 
-    .services-page .hero h1 {
-        font-size: 2rem;
-    }
 
     .services-content {
         padding: 2rem 1rem;
@@ -1805,10 +1729,6 @@ body {
     padding: 1rem;
 }
 
-.blog-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
 
 .blog-content {
     max-width: 1200px;
@@ -1895,6 +1815,7 @@ body {
 
 .read-more {
     align-self: flex-end;
+    margin-left: auto;
     color: #277E47;
     text-decoration: none;
     font-weight: 500;
@@ -1929,10 +1850,6 @@ body {
         height: 200px;
     }
 
-    .blog-page .hero h1 {
-        font-size: 2rem;
-    }
-
     .blog-content {
         padding: 2rem 1rem;
     }
@@ -1963,11 +1880,6 @@ body {
 
 .news-page .hero-content {
     padding: 1rem;
-}
-
-.news-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .news-content {
@@ -2088,10 +2000,6 @@ body {
 @media (max-width: 768px) {
     .news-page .hero {
         height: 200px;
-    }
-
-    .news-page .hero h1 {
-        font-size: 2rem;
     }
 
     .news-content {
@@ -2395,14 +2303,6 @@ body {
     height: 100%;
 }
 
-.privacy-page .hero h1,
-.terms-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--white);
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
-}
-
 /* 响应式设计 */
 @media (max-width: 768px) {
     .privacy-page .hero,
@@ -2410,10 +2310,6 @@ body {
         height: 200px;
     }
 
-    .privacy-page .hero h1,
-    .terms-page .hero h1 {
-        font-size: 2rem;
-    }
 }
 
 /* 响应式设计 */
@@ -2427,17 +2323,6 @@ body {
     .privacy-page .hero,
     .terms-page .hero {
         height: 150px;
-    }
-
-    .hero h1,
-    .about-page .hero h1,
-    .contact-page .hero h1,
-    .services-page .hero h1,
-    .blog-page .hero h1,
-    .news-page .hero h1,
-    .privacy-page .hero h1,
-    .terms-page .hero h1 {
-        font-size: 2rem;
     }
 }
 
@@ -3297,7 +3182,7 @@ section.hero-slider .hero-slide:not(.star-bg)  {
 }
 section.hero-slider .hero-slide:not(.star-bg) .hero-title,
 section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
-    text-shadow: none !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero-blur-bg {
@@ -3313,11 +3198,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     margin: 0 auto 2rem auto;
     position: relative;
     z-index: 2;
-}
-.hero-blur-bg .hero-title,
-.hero-blur-bg .hero-subtitle {
-    color: #ffffff !important;
-    text-shadow: none !important;
 }
 
 .hero-blur-bg .hero-title {
