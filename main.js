@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // 获取保存的语言设置或使用默认语言（日语）
         const savedLanguage = localStorage.getItem('selectedLanguage') || 'jp';
         
+        // 同步设置 <html lang>
+        document.documentElement.lang = savedLanguage;
+        
         // 设置当前语言的flag为active
         flagOptions.forEach(flag => {
             if (flag.dataset.lang === savedLanguage) {
@@ -554,6 +557,9 @@ function animateText(element, text) {
 function changeLanguage(lang) {
     // 保存语言选择到localStorage
     localStorage.setItem('selectedLanguage', lang);
+    
+    // 同步修改 <html lang="...">
+    document.documentElement.lang = lang;
     
     // 更新所有带有data-translate属性的元素
     document.querySelectorAll('[data-translate]').forEach(element => {
