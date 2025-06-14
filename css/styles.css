@@ -487,8 +487,8 @@ body {
 .cta-button {
     display: inline-block;
     padding: 1.2rem 2.5rem;
-    background: #ffffff;
-    color: #277E47;
+    background: var(--primary-color);
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -496,6 +496,14 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    border: none;
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button::before {
@@ -516,12 +524,6 @@ body {
 
 .cta-button:hover::before {
     left: 100%;
-}
-
-.cta-button:hover {
-    background: #f0f0f0;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* 首页区块动画效果 */
@@ -1402,7 +1404,7 @@ body {
 .contact-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .contact-info {
@@ -1414,7 +1416,6 @@ body {
 
 .contact-info h2 {
     text-align: center;
-    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
@@ -1462,7 +1463,7 @@ body {
 
 
     .contact-content {
-        padding: 2rem 1rem;
+        padding: 0rem 1rem;
     }
 
     .contact-info {
@@ -3206,7 +3207,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 1rem;
 }
 .contact-form {
     background: #fff;
@@ -3225,8 +3226,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     gap: 0.5rem;
 }
 .contact-form label {
-    font-weight: 600;
-    color: #277E47;
     margin-bottom: 0.2rem;
 }
 .contact-form input,
