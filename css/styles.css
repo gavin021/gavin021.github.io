@@ -1307,7 +1307,6 @@ body {
 }
 
 .team-member .position {
-    color: var(--primary-color);
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -2702,7 +2701,6 @@ body {
 
 .service-category-title {
     font-size: 1.8rem;
-    color: var(--primary-color);
     margin-bottom: 1.5rem;
     max-width: 1200px;
     margin-left: auto;
@@ -2830,14 +2828,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    .services-preview {
-    }
     .service-category {
         padding: 0rem;
         padding-bottom: 2rem;
-    }
-    .service-category-title {
-        font-size: 1.3rem;
     }
     .services-grid {
         grid-template-columns: 1fr;
