@@ -167,112 +167,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #fff;
-    padding: 2rem;
-    max-width: 800px;
-}
-
-.hero-title {
-    font-size: 2.8rem;
-    line-height: 1.2;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
-    font-weight: bold;
-}
-
-/* 子页面 Hero 样式 */
-.about-page .hero,
-.services-page .hero,
-.news-page .hero,
-.terms-page .hero,
-.privacy-page .hero,
-.contact-page .hero {
-    height: 200px !important;
-    margin-top: 60px;
-    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
-}
-
-.about-page .hero-content,
-.services-page .hero-content,
-.news-page .hero-content,
-.terms-page .hero-content,
-.privacy-page .hero-content,
-.contact-page .hero-content {
-    padding: 1rem;
-}
-
-.about-page .hero h1,
-.services-page .hero h1,
-.news-page .hero h1,
-.terms-page .hero h1,
-.privacy-page .hero h1,
-.contact-page .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-/* 视频背景样式 */
-.about-page .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    /* 首页保持全屏 */
-    body:not(.about-page):not(.services-page):not(.news-page):not(.terms-page):not(.privacy-page):not(.contact-page) .hero {
-        height: 100vh;
-    }
-    
-    /* 其他页面统一高度 */
-    .about-page .hero,
-    .services-page .hero,
-    .news-page .hero,
-    .terms-page .hero,
-    .privacy-page .hero,
-    .contact-page .hero {
-        height: 150px !important;
-        margin-top: 60px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .about-page .hero h1,
-    .services-page .hero h1,
-    .news-page .hero h1,
-    .terms-page .hero h1,
-    .privacy-page .hero h1,
-    .contact-page .hero h1 {
-        font-size: 2rem;
-    }
-}
-
-/* 星空效果 */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     background: 
@@ -310,6 +204,200 @@ body {
     pointer-events: none;
 }
 
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(39, 126, 71, 0.5);
+    font-weight: bold;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.hero h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #fff;
+    animation: lineWidth 1s ease-out forwards;
+}
+
+@keyframes lineWidth {
+    to {
+        width: 100px;
+    }
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* 子页面 Hero 样式 */
+.about-page .hero,
+.services-page .hero,
+.news-page .hero,
+.terms-page .hero,
+.privacy-page .hero,
+.contact-page .hero {
+    height: 200px !important;
+    margin-top: 60px;
+    background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
+}
+
+.about-page .hero-content,
+.services-page .hero-content,
+.news-page .hero-content,
+.terms-page .hero-content,
+.privacy-page .hero-content,
+.contact-page .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-page .hero h1,
+.services-page .hero h1,
+.news-page .hero h1,
+.terms-page .hero h1,
+.privacy-page .hero h1,
+.contact-page .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 视频背景样式 */
+.about-page .hero-video,
+.services-page .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.about-page .hero,
+.services-page .hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-page .hero::before,
+.services-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.about-page .hero-content,
+.services-page .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-page .hero h1,
+.services-page .hero h1 {
+    color: #FFFFFF;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .about-page .hero,
+    .services-page .hero {
+        height: 40vh;
+    }
+
+    .about-page .hero h1,
+    .services-page .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    /* 首页保持全屏 */
+    body:not(.about-page):not(.services-page):not(.news-page):not(.terms-page):not(.privacy-page):not(.contact-page) .hero {
+        height: 100vh;
+    }
+    
+    /* 其他页面统一高度 */
+    .about-page .hero,
+    .services-page .hero,
+    .news-page .hero,
+    .terms-page .hero,
+    .privacy-page .hero,
+    .contact-page .hero {
+        height: 150px !important;
+        margin-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-page .hero h1,
+    .services-page .hero h1,
+    .news-page .hero h1,
+    .terms-page .hero h1,
+    .privacy-page .hero h1,
+    .contact-page .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* 星空效果 */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
 /* 流星效果 */
 .hero .shooting-star {
     position: absolute;
@@ -334,15 +422,6 @@ body {
     top: 0;
     left: 60%;
     animation-delay: 1.5s;
-}
-
-@keyframes twinkle {
-    0%, 100% {
-        opacity: 0.3;
-    }
-    50% {
-        opacity: 0.6;
-    }
 }
 
 @keyframes shooting {
@@ -1363,7 +1442,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
 
@@ -1375,11 +1454,12 @@ body {
 }
 
 .about-page .hero h1 {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
 }
 
 /* 联系我们页面样式 */
@@ -2551,7 +2631,6 @@ body {
 .company-intro {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 20px;
     text-align: center;
 }
 
@@ -2564,38 +2643,47 @@ body {
 }
 
 .company-intro .subheadline {
-    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .company-intro .subheadline p {
-    font-size: 1.4rem;
-    color: #666;
+    font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 15px;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
 .company-intro .opening-paragraph {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid rgba(39, 126, 71, 0.2);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .company-intro .opening-paragraph p {
-    margin: 0;
+    position: relative;
+    z-index: 1;
     line-height: 1.8;
-    color: #333;
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1.3rem;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.company-intro .opening-paragraph p.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-    .company-intro {
-        padding: 40px 20px;
-    }
 
     .company-intro .section-title {
         font-size: 2rem;
@@ -2606,12 +2694,12 @@ body {
     }
 
     .company-intro .opening-paragraph {
-        padding: 1.5rem;
-        margin: 1.5rem auto;
+        padding: 2rem;
+        min-height: 180px;
     }
     
     .company-intro .opening-paragraph p {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 }
 

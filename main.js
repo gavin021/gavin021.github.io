@@ -69,6 +69,7 @@ const translations = {
         'hero-title': 'Launch Smarter.\nScale Faster.\nWin in Japan and China.',
         'hero-subtitle1': 'We turn big dreams into bold realities.',
         'hero-subtitle2': 'From zero to hero, our local know-how, creative firepower, and growth-first strategies help foreign brands thrive in Asia\'s most exciting markets.',
+        'company-intro-paragraph': 'Your success in Asia demands more than translation—it demands true localization, market intelligence, and strategic execution. At Action For, we deliver full-service marketing and sales acceleration solutions designed to help foreign brands break through cultural barriers and achieve real, measurable results.',
         'cta-button': ' → Launch My Brand',
         'services-title': 'Our Services',
         'service-digital-title': 'Digital Growth Services',
@@ -195,7 +196,6 @@ const translations = {
         'company-profile-name-label': 'Company Name:',
         'company-profile-name': '合同会社アクションフォー',
         'company-profile-en-label': 'English Name:',
-        'company-profile-en': 'Action For LLC',
         'company-profile-date-label': 'Established:',
         'company-profile-date': '2024/02',
         'news-ai-ads-tag1': 'AI',
@@ -222,6 +222,7 @@ const translations = {
         'hero-title': 'Launch Smarter.\nScale Faster.\nWin in Japan and China.',
         'hero-subtitle1': '我们将远大梦想转化为现实。',
         'hero-subtitle2': '从零到成功，我们凭借本地专业知识、创意实力和增长优先策略，帮助外国品牌在亚洲最具活力的市场中蓬勃发展。',
+        'company-intro-paragraph': '在亚洲取得成功需要的不仅仅是翻译——它需要真正的本地化、市场洞察和战略执行。在 Action For，我们提供全方位的营销和销售加速解决方案，旨在帮助外国品牌突破文化障碍，实现真实、可衡量的成果。',
         'cta-button': ' → Launch My Brand',
         'services-title': '我们的服务',
         'service-digital-title': '数字增长服务',
@@ -348,7 +349,6 @@ const translations = {
         'company-profile-name-label': '公司名：',
         'company-profile-name': '合同会社アクションフォー',
         'company-profile-en-label': '英文名：',
-        'company-profile-en': 'Action For LLC',
         'company-profile-date-label': '设立日：',
         'company-profile-date': '2024/02',
         'news-ai-ads-tag1': 'AI',
@@ -375,6 +375,7 @@ const translations = {
         'hero-title': 'Launch Smarter.\nScale Faster.\nWin in Japan and China.',
         'hero-subtitle1': '私たちは大きな夢を現実に変えます。',
         'hero-subtitle2': 'ゼロから成功へ、私たちのローカルノウハウ、クリエイティブな力、成長重視の戦略により、外国ブランドがアジアの最も魅力的な市場で成功することを支援します。',
+        'company-intro-paragraph': 'アジアでの成功には、単なる翻訳以上のものが必要です。それは真のローカライゼーション、市場インテリジェンス、そして戦略的な実行を必要とします。Action Forでは、外国ブランドが文化的障壁を乗り越え、実質的で測定可能な結果を達成するための、フルサービスのマーケティングとセールス加速ソリューションを提供しています。',
         'cta-button': ' → Launch My Brand',
         'services-title': 'サービス内容',
         'service-digital-title': 'デジタル成長サービス',
@@ -501,7 +502,6 @@ const translations = {
         'company-profile-name-label': '会社名：',
         'company-profile-name': '合同会社アクションフォー',
         'company-profile-en-label': '英語名：',
-        'company-profile-en': 'Action For LLC',
         'company-profile-date-label': '設立日：',
         'company-profile-date': '2024/02',
         'news-ai-ads-tag1': 'AI',
@@ -541,10 +541,20 @@ function getTranslation(lang, key) {
     return translations[lang][key] || null;
 }
 
+// 淡入动画效果
+function animateText(element, text) {
+    element.textContent = text;
+    // 使用 requestAnimationFrame 确保 DOM 更新后再添加动画类
+    requestAnimationFrame(() => {
+        element.classList.add('animate');
+    });
+}
+
 // 切换语言
 function changeLanguage(lang) {
     // 保存语言选择到localStorage
     localStorage.setItem('selectedLanguage', lang);
+    
     // 更新所有带有data-translate属性的元素
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
@@ -552,11 +562,17 @@ function changeLanguage(lang) {
         if (typeof value === 'string') {
             if (element.classList.contains('hero-title')) {
                 element.innerHTML = value.replace(/\n/g, '<br>');
+            } else if (key === 'company-intro-paragraph') {
+                // 移除之前的动画类
+                element.classList.remove('animate');
+                // 添加新的动画效果
+                animateText(element, value);
             } else {
                 element.textContent = value;
             }
         }
     });
+    
     // 更新语言选择器的值
     const languageSelector = document.getElementById('languageSelector');
     if (languageSelector) {
@@ -786,4 +802,16 @@ changeLanguage = function(lang) {
 (function(){
     var lang = localStorage.getItem('selectedLanguage') || 'jp';
     updateNewsListSummaries(lang);
-})(); 
+})();
+
+// 页面加载时初始化动画效果
+document.addEventListener('DOMContentLoaded', function() {
+    const introParagraph = document.querySelector('[data-translate="company-intro-paragraph"]');
+    if (introParagraph) {
+        const lang = localStorage.getItem('selectedLanguage') || 'jp';
+        const text = getTranslation(lang, 'company-intro-paragraph');
+        if (text) {
+            animateText(introParagraph, text);
+        }
+    }
+}); 
