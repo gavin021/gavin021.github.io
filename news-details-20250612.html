@@ -24,11 +24,15 @@
                 <a href="contact.html" data-translate="nav-contact">お問い合わせ</a>
             </div>
             <div class="language-selector">
-                <select id="languageSelector">
-                    <option value="en">English</option>
-                    <option value="zh">中文</option>
-                    <option value="jp">日本語</option>
-                </select>
+                <div class="flag-option" data-lang="en">
+                    <img src="images/flags/us.png" alt="English">
+                </div>
+                <div class="flag-option" data-lang="zh">
+                    <img src="images/flags/cn.png" alt="中文">
+                </div>
+                <div class="flag-option" data-lang="jp">
+                    <img src="images/flags/jp.png" alt="日本語">
+                </div>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
@@ -124,9 +128,11 @@
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-title">お問い合わせ情報</h4>
-                <p data-translate="contact-phone-text">電話：080-7099-0700</p>
-                <p><span data-translate="contact-email-label">メール</span>：<a href="mailto:contact@actionfor.net">contact@actionfor.net</a></p>
-                <p data-translate="contact-address-text">住所：東京都中央区晴海3-16-1ベイサイドタワー晴海2003</p>
+                <ul>
+                    <li data-translate="contact-phone-text">電話：080-7099-0700</li>
+                    <li><span data-translate="contact-email-label">メール</span>：<a href="mailto:contact@actionfor.net">contact@actionfor.net</a></li>
+                    <li data-translate="contact-address-text">住所：東京都中央区晴海3-16-1ベイサイドタワー晴海2003</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
@@ -140,5 +146,36 @@
     </footer>
 
     <script src="main.js"></script>
+    <script>
+        // 确保在页面加载完成后初始化语言切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const flagOptions = document.querySelectorAll('.flag-option');
+            if (flagOptions.length > 0) {
+                // 获取保存的语言设置或使用默认语言（日语）
+                const savedLanguage = localStorage.getItem('selectedLanguage') || 'jp';
+                
+                // 设置当前语言的flag为active
+                flagOptions.forEach(flag => {
+                    if (flag.dataset.lang === savedLanguage) {
+                        flag.classList.add('active');
+                    }
+                });
+                
+                // 应用保存的语言设置
+                changeLanguage(savedLanguage);
+
+                // 添加语言切换事件监听
+                flagOptions.forEach(flag => {
+                    flag.addEventListener('click', function() {
+                        const lang = this.dataset.lang;
+                        // 更新active状态
+                        flagOptions.forEach(f => f.classList.remove('active'));
+                        this.classList.add('active');
+                        changeLanguage(lang);
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html> 

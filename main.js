@@ -27,18 +27,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 语言切换初始化
-    const languageSelector = document.getElementById('languageSelector');
-    if (languageSelector) {
+    const flagOptions = document.querySelectorAll('.flag-option');
+    if (flagOptions.length > 0) {
         // 获取保存的语言设置或使用默认语言（日语）
         const savedLanguage = localStorage.getItem('selectedLanguage') || 'jp';
-        languageSelector.value = savedLanguage;
+        
+        // 设置当前语言的flag为active
+        flagOptions.forEach(flag => {
+            if (flag.dataset.lang === savedLanguage) {
+                flag.classList.add('active');
+            }
+        });
         
         // 应用保存的语言设置
         changeLanguage(savedLanguage);
 
         // 添加语言切换事件监听
-        languageSelector.addEventListener('change', function(e) {
-            changeLanguage(e.target.value);
+        flagOptions.forEach(flag => {
+            flag.addEventListener('click', function() {
+                const lang = this.dataset.lang;
+                // 更新active状态
+                flagOptions.forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
+                changeLanguage(lang);
+            });
         });
     }
 

@@ -24,11 +24,15 @@
                 <a href="contact.html" data-translate="nav-contact">联系我们</a>
             </div>
             <div class="language-selector">
-                <select id="languageSelector">
-                    <option value="en">English</option>
-                    <option value="zh">中文</option>
-                    <option value="jp">日本語</option>
-                </select>
+                <div class="flag-option" data-lang="en">
+                    <img src="images/flags/us.png" alt="English">
+                </div>
+                <div class="flag-option" data-lang="zh">
+                    <img src="images/flags/cn.png" alt="中文">
+                </div>
+                <div class="flag-option" data-lang="jp">
+                    <img src="images/flags/jp.png" alt="日本語">
+                </div>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
@@ -161,9 +165,11 @@
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-title">联系方式</h4>
-                <p data-translate="contact-phone-text">电话：080-7099-0700</p>
-                <p><span data-translate="contact-email-label">邮箱</span>：<a href="mailto:contact@actionfor.net">contact@actionfor.net</a></p>
-                <p data-translate="contact-address-text">地址：東京都中央区晴海3-16-1ベイサイドタワー晴海2003</p>
+                <ul>
+                    <li data-translate="contact-phone-text">电话：080-7099-0700</li>
+                    <li><span data-translate="contact-email-label">邮箱</span>：<a href="mailto:contact@actionfor.net">contact@actionfor.net</a></li>
+                    <li data-translate="contact-address-text">地址：東京都中央区晴海3-16-1ベイサイドタワー晴海2003</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
