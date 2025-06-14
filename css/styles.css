@@ -2067,10 +2067,12 @@ body {
 }
 
 .news-tags {
-    margin-top: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 10px;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    
 }
 
 .tag {
@@ -2351,13 +2353,13 @@ body {
 }
 
 .news-content h3 {
-    margin: 0 0 15px;
-    font-size: 1.5rem;
+    margin: 0 0 10px;
+    font-size: 1.3rem;
     color: #333;
 }
 
 .news-meta {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #666;
     font-size: 0.9rem;
 }
@@ -2376,6 +2378,7 @@ body {
     color: #666;
     line-height: 1.6;
     flex-grow: 1;
+    font-size: 0.9rem;
 }
 
 .read-more {
