@@ -3461,3 +3461,16 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .service-card .card-content p {
     margin-bottom: 10px; /* 增加与 .service-detail 的间距 */
 }
+
+/* Social icons in footer */
+.footer .social-links i {
+    color: #fff;
+}
+
+/* 保证页脚 X 图标与其他社交媒体图标尺寸完全一致 */
+.footer .social-links a[aria-label='X'] svg {
+    width: 0.8em;
+    height: 0.8em;
+    display: inline;
+    /* 让SVG和FontAwesome图标基线对齐 */
+}
