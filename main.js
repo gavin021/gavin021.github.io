@@ -225,7 +225,8 @@ const translations = {
         'company-profile-capital-label': 'Capital',
         'company-profile-capital': '2,000,000 JPY',
         'company-profile-corpno-label': 'Corporate Number',
-        'company-profile-corpno': '2010003042862'
+        'company-profile-corpno': '2010003042862',
+        'antisocial-policy': 'Policy on Exclusion of Anti-Social Forces'
     },
     'zh': {
         'nav-home': '首页',
@@ -389,7 +390,8 @@ const translations = {
         'company-profile-capital-label': '资本金',
         'company-profile-capital': '2,000,000日元',
         'company-profile-corpno-label': '法人番号',
-        'company-profile-corpno': '2010003042862'
+        'company-profile-corpno': '2010003042862',
+        'antisocial-policy': '反社会势力应对方针'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -553,7 +555,8 @@ const translations = {
         'company-profile-capital-label': '資本金',
         'company-profile-capital': '2,000,000円',
         'company-profile-corpno-label': '法人番号',
-        'company-profile-corpno': '2010003042862'
+        'company-profile-corpno': '2010003042862',
+        'antisocial-policy': '反社会的勢力への対応に関する方針'
     }
 };
 
