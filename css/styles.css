@@ -258,23 +258,13 @@ body {
 }
 
 /* 子页面 Hero 样式 */
-.about-page .hero,
-.services-page .hero,
-.news-page .hero,
-.terms-page .hero,
-.privacy-page .hero,
-.contact-page .hero {
+.hero {
     height: 200px !important;
     margin-top: 60px;
     background: linear-gradient(135deg, #1a5c35, #277E47, #1a5c35);
 }
 
-.about-page .hero-content,
-.services-page .hero-content,
-.news-page .hero-content,
-.terms-page .hero-content,
-.privacy-page .hero-content,
-.contact-page .hero-content {
+.hero-content {
     position: relative;
     z-index: 3;
     max-width: 800px;
@@ -2188,7 +2178,7 @@ body {
 .policy-section p {
     color: #333;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .terms-section ul,

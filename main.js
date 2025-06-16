@@ -124,6 +124,7 @@ const translations = {
         'contact-address-text': 'Address: Harumi 3-16-1-2003, Chuo-ku, Tokyo',
         'privacy-policy': 'Privacy Policy',
         'cookie-settings': 'Cookie Settings',
+        'compliance': 'Compliance Declaration',
         'terms': 'Terms of Use',
         'all-rights': 'All rights reserved.',
         'cookie-settings-title': 'Cookie Settings',
@@ -169,7 +170,7 @@ const translations = {
         'privacy-rights-2': 'Correct inaccurate information',
         'privacy-rights-3': 'Request deletion of your personal information',
         'privacy-rights-4': 'Withdraw consent',
-        'privacy-contact': 'Contact Us',
+        'privacy-contact': '個人情報保護方針に関する問い合わせ',
         'privacy-contact-text': 'If you have any questions about this privacy policy, please contact us by the following means:',
         'privacy-email': 'Email: contact@actionfor.net',
         'privacy-phone': 'Phone: 080-7099-0700',
@@ -198,7 +199,7 @@ const translations = {
         'hero-slide3-title': 'Achieve sustained growth with tailored strategies',
         'company-profile-title': 'Company Profile',
         'company-profile-name-label': 'Company Name',
-        'company-profile-name': 'Action For LLC.',
+        'company-profile-name': '合同会社アクションフォー',
         'policy-established-label': 'Established',
         'policy-established-date': 'June 2024',
         'policy-updated-label': 'Last Updated',
@@ -220,7 +221,11 @@ const translations = {
         'service-overseas-label-detail': 'We ensure ingredient labeling and packaging fully comply with local regulations. Our support covers food safety, cosmetics, and pharmaceutical laws for smooth market entry.',
         'service-overseas-marketing-detail': 'We develop effective marketing strategies based on local trends, including KOL collaboration, social media marketing, and event planning to boost brand awareness and sales.',
         'service-overseas-exhibition-detail': 'We support participation in local exhibitions and act as your business negotiation agent, leveraging local business customs to help you present and negotiate effectively and acquire new clients.',
-        'contact-email-label': 'Email'
+        'contact-email-label': 'Email',
+        'company-profile-capital-label': 'Capital',
+        'company-profile-capital': '2,000,000 JPY',
+        'company-profile-corpno-label': 'Corporate Number',
+        'company-profile-corpno': '2010003042862'
     },
     'zh': {
         'nav-home': '首页',
@@ -283,6 +288,7 @@ const translations = {
         'contact-address-text': '地址：東京都中央区晴海3-16-1-2003',
         'privacy-policy': '隐私政策',
         'cookie-settings': 'Cookie 设置',
+        'compliance': '合规声明',
         'terms': '使用条款',
         'all-rights': '保留所有权利。',
         'cookie-settings-title': 'Cookie 设置',
@@ -328,7 +334,7 @@ const translations = {
         'privacy-rights-2': '更正不准确的信息',
         'privacy-rights-3': '要求删除您的个人信息',
         'privacy-rights-4': '撤回同意',
-        'privacy-contact': '联系我们',
+        'privacy-contact': '個人情報保護方針に関する問い合わせ',
         'privacy-contact-text': '如果您对本隐私政策有任何疑问，请通过以下方式联系我们：',
         'privacy-email': '邮箱：contact@actionfor.net',
         'privacy-phone': '电话：080-7099-0700',
@@ -379,7 +385,11 @@ const translations = {
         'service-overseas-label-detail': '实现完全符合当地法规的成分标识和包装。支持食品卫生法、化妆品法规、医药品法规等各行业规范，助力顺利进入市场。',
         'service-overseas-marketing-detail': '结合当地趋势，制定高效的市场营销战略。通过KOL合作、社交媒体营销、活动策划等多元方式提升品牌认知和销售。',
         'service-overseas-exhibition-detail': '提供当地展会参展支持及商务洽谈代理。基于对当地商务习惯的理解，助力高效展示与谈判，开拓新客户。',
-        'contact-email-label': '邮箱'
+        'contact-email-label': '邮箱',
+        'company-profile-capital-label': '资本金',
+        'company-profile-capital': '2,000,000日元',
+        'company-profile-corpno-label': '法人番号',
+        'company-profile-corpno': '2010003042862'
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -442,6 +452,7 @@ const translations = {
         'contact-address-text': '住所：東京都中央区晴海3-16-1-2003',
         'privacy-policy': '個人情報保護方針',
         'cookie-settings': 'Cookie設定',
+        'compliance': 'コンプライアンス宣言',
         'terms': '利用規約',
         'all-rights': 'All rights reserved.',
         'cookie-settings-title': 'Cookie設定',
@@ -487,7 +498,7 @@ const translations = {
         'privacy-rights-2': '不正確な情報の訂正',
         'privacy-rights-3': '個人情報の削除要求',
         'privacy-rights-4': '同意の撤回',
-        'privacy-contact': 'お問い合わせ',
+        'privacy-contact': '個人情報保護方針に関する問い合わせ',
         'privacy-contact-text': '本プライバシーポリシーに関するご質問は、以下の方法でご連絡ください：',
         'privacy-email': 'メール：contact@actionfor.net',
         'privacy-phone': '電話：080-7099-0700',
@@ -538,7 +549,11 @@ const translations = {
         'service-overseas-label-detail': '現地の法規制に完全準拠した成分表示とパッケージングを実現します。食品衛生法、化粧品規制、医薬品規制など、各業界の規制に対応し、スムーズな市場参入をサポートします。',
         'service-overseas-marketing-detail': '現地のトレンドを踏まえた効果的なマーケティング戦略を展開します。KOLとの協業、SNSマーケティング、イベント企画など、多角的なアプローチで製品の認知度と売上を向上させます。',
         'service-overseas-exhibition-detail': '現地の展示会への出展支援や商談代行を行います。現地のビジネス慣習を理解した上で、効果的なプレゼンテーションと交渉を実施し、新規取引先の開拓をサポートします。',
-        'contact-email-label': 'メール'
+        'contact-email-label': 'メール',
+        'company-profile-capital-label': '資本金',
+        'company-profile-capital': '2,000,000円',
+        'company-profile-corpno-label': '法人番号',
+        'company-profile-corpno': '2010003042862'
     }
 };
 
