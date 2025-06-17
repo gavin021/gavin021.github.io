@@ -3395,7 +3395,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 
 .blog-card .news-item-image {
-    height: 200px;
+    height: 210px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3418,7 +3418,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 
 .blog-card .news-item-image h3 {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin: 0;
     position: relative;
