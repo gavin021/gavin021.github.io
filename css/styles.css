@@ -3498,13 +3498,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     color: var(--primary-color);
 }
 
-.sales-agency-section-title {
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-    color: var(--secondary-color);
-}
-
 .sales-agency-indent {
     margin-left: 32px;
 }
@@ -3776,7 +3769,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     position: static;
     color: #fff;
     background: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     box-shadow: none;
     border-radius: 0;
