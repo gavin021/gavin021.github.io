@@ -324,18 +324,9 @@ body {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-    /* 首页保持全屏 */
-    body:not(.about-page):not(.services-page):not(.news-page):not(.terms-page):not(.privacy-page):not(.contact-page) .hero {
-        height: 100vh;
-    }
     
     /* 其他页面统一高度 */
-    .about-page .hero,
-    .services-page .hero,
-    .news-page .hero,
-    .terms-page .hero,
-    .privacy-page .hero,
-    .contact-page .hero {
+    .hero {
         height: 150px !important;
         margin-top: 60px;
     }
@@ -3126,7 +3117,6 @@ body {
 /* 恢复 hero-subtitle 原始样式 */
 .hero-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 2.5rem;
     color: #fff;
     text-shadow: 0 0 10px rgba(39, 126, 71, 0.3);
     line-height: 1.6;
