@@ -2706,6 +2706,7 @@ body {
     line-height: 1.8;
     color: #666;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -3913,6 +3914,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .china-data-img-bg {
     text-align: center;
     margin-bottom: 1em;
+    margin-top: 1em;
     background: rgba(255,255,255,1);
     border-radius: 12px;
     padding: 0;
@@ -3952,9 +3954,8 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    max-width: 370px;
     min-width: 260px;
-    flex: 1 1 320px;
+    flex: 1 1;
     transition: transform 0.25s, box-shadow 0.25s;
     height: 100%;
 }
@@ -4008,4 +4009,18 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     .sales-agency-news-img {
         height: 120px;
     }
+}
+
+.sales-agency-news-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.sales-agency-news-list .sales-agency-news-item {
+    margin-bottom: 22px;
+}
+.sales-agency-news-list .sales-agency-news-item:last-child {
+    margin-bottom: 0;
 }
