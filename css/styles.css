@@ -3491,7 +3491,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 
 /* Sales Agency 页面专用样式 */
 .sales-agency-main-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 32px;
     text-align: center;
@@ -3683,7 +3683,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 @media (max-width: 600px) {
     .sales-agency-section-hero {
-        height: 140px;
+        height: 220px;
         border-radius: 8px 8px 0 0;
     }
 }
@@ -3710,11 +3710,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
-@media (max-width: 600px) {
-    .sales-agency-section-hero::before {
-        border-radius: 8px 8px 0 0;
-    }
-}
 
 .sales-agency-section-body {
     padding: 2.5rem 1rem 2.5rem 1rem;
@@ -3728,15 +3723,11 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     margin-bottom: 48px;
 }
 @media (max-width: 600px) {
-    .sales-agency-section-hero {
-        height: 150px;
-        border-radius: 8px 8px 0 0;
-    }
     .sales-agency-section-img {
         border-radius: 8px 8px 0 0;
     }
     .sales-agency-section-hero .sales-agency-section-title {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         padding: 1em 0em;
     }
     .sales-agency-section-hero::before {
@@ -3798,11 +3789,11 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .sales-agency-section-subtitle {
     position: static;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 @media (max-width: 600px) {
     .sales-agency-section-hero-text {
@@ -3815,7 +3806,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
         font-size: 1.1rem;
     }
     .sales-agency-section-subtitle {
-        font-size: 0.92rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -3922,10 +3913,12 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 
 .sales-agency-table td:nth-child(1) {
     text-align: center;
+    min-width: 80px;
 }
 .sales-agency-table td:nth-child(2),
 .sales-agency-table td:nth-child(3) {
     text-align: right;
+    min-width: 110px;
 }
 .sales-agency-table td:nth-child(4) {
     text-align: left;
