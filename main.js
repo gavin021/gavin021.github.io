@@ -229,6 +229,12 @@ const translations = {
         'company-profile-corpno': '2010003042862',
         'antisocial-policy': 'Policy on Exclusion of Anti-Social Forces',
         'nav-recruit': 'Recruitment',
+        'service-digital-mpr-detail': 'Breaking into Asia requires more than translation—it demands a tailored strategy that resonates with local values and media landscapes. Our PR campaigns have secured placements in top-tier media with a 90% pitch success rate, increasing brand mentions by over 250% within 6 months for our clients.',
+        'service-digital-content-detail': 'High-impact content builds credibility fast, especially in discerning markets like Japan and China. We produce bilingual articles, success stories, and in-depth interviews that have increased average session times by 50% and generated 3x more inbound leads for B2B and B2C clients alike.',
+        'service-digital-seo-detail': 'Asia\'s search behavior is different—and so is our SEO approach. We craft a locally optimized SEO strategy combining keyword research, technical audits, and link building. Our clients typically achieve +220% organic traffic growth within 6 months and rank in the top 3 positions for priority keywords in Japanese and Chinese markets.',
+        'service-digital-email-detail': 'We craft high-converting, culturally relevant email campaigns—from welcome flows to promotions and newsletters—designed specifically for Asian markets. Our clients have seen open rates soar by 40% and email-driven revenue increase by 65% within the first 90 days.',
+        'service-digital-website-detail': 'We design and develop culturally optimized landing pages and microsites that not only look beautiful but are engineered to maximize conversion. Our pages have boosted conversion rates by 2.5x compared to clients\' previous campaigns and achieved bounce rates below 30%, outperforming industry averages.',
+        'established-sales-channels': '→ Established Sales Channels',
     },
     'zh': {
         'nav-home': '首页',
@@ -396,6 +402,12 @@ const translations = {
         'company-profile-corpno': '2010003042862',
         'antisocial-policy': '反社会势力应对方针',
         'nav-recruit': '招聘信息',
+        'service-digital-mpr-detail': '进军亚洲市场需要的不仅仅是翻译——它需要一个与当地价值观和媒体环境相呼应的定制策略。我们的公关活动在顶级媒体上的投放成功率达到90%，在6个月内为客户提升了250%以上的品牌提及度。',
+        'service-digital-content-detail': '高影响力的内容能快速建立信誉，尤其是在日本和中国这样具有鉴别力的市场。我们制作的双语文章、成功案例和深度访谈，使客户网站的平均会话时间增加了50%，B2B和B2C客户的入站线索均增长了3倍。',
+        'service-digital-seo-detail': '亚洲的搜索行为与其他地区不同——我们的SEO方法也因此独具特色。我们结合关键词研究、技术审计和链接建设，制定本地化的SEO策略。我们的客户通常在6个月内实现220%的自然流量增长，并在日本和中国市场的重点关键词排名中占据前三位置。',
+        'service-digital-email-detail': '我们设计高转化率、符合文化特色的电子邮件营销活动——从欢迎邮件到促销信息和新闻通讯——专门针对亚洲市场定制。我们的客户在90天内实现了40%的邮件打开率提升，邮件营销收入增长了65%。',
+        'service-digital-website-detail': '我们设计和开发文化本地化的落地页和微型网站，不仅美观，而且经过精心优化以最大化转化率。我们的页面使转化率比客户之前的活动提高了2.5倍，跳出率低于30%，远超行业平均水平。',
+        'established-sales-channels': '→ 已建立的销售渠道',
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -563,6 +575,12 @@ const translations = {
         'company-profile-corpno': '2010003042862',
         'antisocial-policy': '反社会的勢力への対応に関する方針',
         'nav-recruit': '採用情報',
+        'service-digital-mpr-detail': 'アジア市場への参入には、単なる翻訳以上のものが必要です。現地の価値観やメディア環境に共鳴する、カスタマイズされた戦略が不可欠です。当社のPRキャンペーンは、一流メディアへの掲載成功率90%を達成し、6ヶ月以内にクライアントのブランド露出を250%以上増加させました。',
+        'service-digital-content-detail': '特に日本や中国のような目の肥えた市場では、インパクトのあるコンテンツが信頼性を迅速に構築します。当社が制作するバイリンガル記事、成功事例、詳細なインタビューにより、平均セッション時間が50%増加し、B2BおよびB2Cクライアントともにインバウンドリードが3倍に増加しました。',
+        'service-digital-seo-detail': 'アジアの検索行動は独特であり、それに応じて当社のSEOアプローチも特別です。キーワードリサーチ、技術監査、リンクビルディングを組み合わせた現地最適化SEO戦略を構築します。クライアントは通常6ヶ月以内に自然検索トラフィックが220%増加し、日本と中国市場の重要キーワードで上位3位以内にランクインしています。',
+        'service-digital-email-detail': 'アジア市場に特化した、高コンバージョンで文化的に適切なメールキャンペーンを設計します。ウェルカムフローからプロモーション、ニュースレターまで。クライアントは90日以内にメール開封率が40%上昇し、メール経由の売上が65%増加しています。',
+        'service-digital-website-detail': '文化的に最適化されたランディングページとマイクロサイトを設計・開発し、美しさだけでなく、コンバージョン最大化のための工学的アプローチを実現します。当社のページは、クライアントの以前のキャンペーンと比較してコンバージョン率が2.5倍に向上し、直帰率は業界平均を大きく下回る30%未満を達成しています。',
+        'established-sales-channels': '→ 確立された販売チャネル',
     }
 };
 

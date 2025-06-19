@@ -591,19 +591,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+.service-card .service-detail {
+    font-size: 0.95rem;
+    color: #666;
+}
 
 .service-card h4 {
     margin: 0 0 1rem;
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-.service-card p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 .service-card:hover {
@@ -1497,8 +1494,8 @@ body {
 
 .service-card p {
     margin: 0;
-    color: #666;
-    font-size: 0.9rem;
+    color: #000;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -1524,13 +1521,6 @@ body {
     color: var(--primary-color);
     margin-bottom: 0.7rem;
     font-weight: 600;
-}
-
-.service-card p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
 }
 
 /* 响应式设计 */
@@ -2728,13 +2718,6 @@ body {
     font-weight: bold;
 }
 
-.service-card p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -2757,13 +2740,6 @@ body {
     color: var(--primary-color);
     margin-bottom: 0.7rem;
     font-weight: 600;
-}
-
-.service-card p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
 }
 
 @media (max-width: 900px) {
@@ -3393,7 +3369,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 
 /* 为 .service-card .card-content p 添加荧光笔下划线样式 */
 .service-card .card-content p {
-    margin-bottom: 10px; /* 增加与 .service-detail 的间距 */
+    margin-bottom: 20px; /* 增加与 .service-detail 的间距 */
 }
 
 /* Social icons in footer */
