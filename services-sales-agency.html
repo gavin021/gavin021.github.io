@@ -212,7 +212,7 @@
         <a href="contact.html" class="view-more">今すぐお問い合わせ</a>
 
         <section class="sales-agency-section">
-            <div class="sales-agency-section-hero" style="background-image:url('images/meeting2.jpg');">
+            <div class="sales-agency-section-hero" style="background-image:url('images/index-bg1.jpg');">
                 <div class="sales-agency-section-hero-text">
                     <h2 class="sales-agency-section-title">中国市場について</h2>
                     <div class="sales-agency-section-subtitle">都市部を中心に中間層の台頭が著しく、単なる「<span class='highlight-underline'>価格</span>」ではなく「<span class='highlight-underline'>品質</span>」「<span class='highlight-underline'>安全性</span>」「<span class='highlight-underline'>信頼性</span>」を購買判断の最重要項目としています。</div>
@@ -223,7 +223,7 @@
                     <li class="sales-agency-item">
                         <span class="sales-agency-step-title"><i class="fa fa-lightbulb" style="color:#277E47;margin-right:8px;"></i>中国消費財小売総額</span><br>
                         <div class="china-data-img-bg">
-                            <img src="images/china-data-2015-2024.png" alt="中国消費データ2015-2024グラフ" class="china-data-img">
+                            <img src="images/china-data-2015-2024.png" alt="中国消費データ2015-2024グラフ" class="china-data-img" onclick="openImagePreview(this.src)">
                         </div>
                         <div style="overflow-x:auto">
                             <table class="vertical-list sales-agency-table">
@@ -415,6 +415,36 @@
         </div>
     </footer>
 
+    <!-- 图片预览模态框 -->
+    <div class="image-preview-modal" onclick="closeImagePreview()">
+        <div class="image-preview-content" onclick="event.stopPropagation()">
+            <span class="image-preview-close" onclick="closeImagePreview()">&times;</span>
+            <img src="" alt="预览图片">
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script>
+    function openImagePreview(imgSrc) {
+        const modal = document.querySelector('.image-preview-modal');
+        const modalImg = modal.querySelector('img');
+        modalImg.src = imgSrc;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeImagePreview() {
+        const modal = document.querySelector('.image-preview-modal');
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // 监听ESC键关闭预览
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeImagePreview();
+        }
+    });
+    </script>
 </body>
 </html> 
