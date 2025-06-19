@@ -4039,8 +4039,9 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
   line-height: 1.7;
 }
 .channel-examples {
-  font-size: 0.95em;
+  font-size: 0.85em;
   color: #888;
+  line-height: 1.6;
   margin-top: auto;
   border-top: 1px dashed #e0e0e0;
   padding-top: 7px;
@@ -4059,7 +4060,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 /* 渠道卡片主题图片与标题遮罩美化 - service-card风格 */
 .channel-image {
   width: 100%;
-  height: 120px;
+  height: 130px;
   background-size: cover;
   background-position: center;
   border-radius: 8px 8px 0 0;
