@@ -465,48 +465,6 @@ body {
     text-shadow: 0 0 10px rgba(39, 126, 71, 0.3);
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 1.2rem 2.5rem;
-    background: var(--primary-color);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    border: none;
-}
-
-.cta-button:hover {
-    background: var(--secondary-color);
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.cta-button:hover::before {
-    left: 100%;
-}
-
 /* 首页区块动画效果 */
 .services-preview,
 .blog-preview,
@@ -656,6 +614,7 @@ body {
 .view-more {
     display: block;
     text-align: center;
+    border-width: 0px;
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: #fff;
@@ -3131,7 +3090,7 @@ section.hero-slider .hero-slide:not(.star-bg)  {
     background: rgba(255,255,255,0.82);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 2.5rem 2rem 2rem 2rem;
+    padding: 2rem 1rem 1rem 2rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.13);
     color: #277E47;
     text-align: center;
@@ -3221,13 +3180,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .contact-form textarea:focus {
     border: 1.5px solid #277E47;
     background: #fff;
-}
-.contact-form .cta-button {
-    margin-top: 0.5rem;
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 1rem 0;
-    border-radius: 8px;
 }
 
 /* 分页样式 */
