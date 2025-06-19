@@ -2021,7 +2021,7 @@ body {
 .news-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .news-body {
@@ -3498,10 +3498,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     color: var(--primary-color);
 }
 
-.sales-agency-indent {
-    margin-left: 32px;
-}
-
 @media (max-width: 600px) {
     .sales-agency-indent {
         margin-left: 0;
@@ -3587,6 +3583,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(39,126,71,0.06);
     padding: 2.5rem 2rem 2.5rem 2rem;
+    border: 1px solid #e0e0e0;
 }
 @media (max-width: 600px) {
     .sales-agency-section {
@@ -3600,7 +3597,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 /* Sales Agency 页面统一列表和卡片样式 */
 .sales-agency-list {
     font-size: 1.08rem;
-    line-height: 2.0;
+    line-height: 1.6;
     margin-bottom: 32px;
     list-style: none;
     padding-left: 0;
@@ -3705,7 +3702,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 
 .sales-agency-section-body {
-    padding: 2.5rem 1rem 2.5rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     background: #fff;
     border-radius: 0 0 12px 12px;
 }
@@ -3727,7 +3724,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
         border-radius: 8px 8px 0 0;
     }
     .sales-agency-section-body {
-        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
         border-radius: 0 0 8px 8px;
     }
 }
@@ -3792,7 +3789,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     .sales-agency-section-hero-text {
         left: 20px;
         right: 20px;
-        bottom: 10px;
+        bottom: 20px;
         gap: 0.15em;
     }
     .sales-agency-section-title {
@@ -3919,72 +3916,74 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 
 .sales-agency-news-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 18px;
     margin: 1.2em 0 1.5em 0;
 }
+
 .sales-agency-news-item {
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-    display: flex;
-    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(39,126,71,0.07);
+    border: 1.5px solid #e0e0e0;
     overflow: hidden;
-    min-width: 260px;
-    flex: 1 1;
-    transition: transform 0.25s, box-shadow 0.25s;
-    height: 100%;
+    transition: box-shadow 0.2s;
+    padding: 0;
+    width: 50%;
 }
+
 .sales-agency-news-item:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 24px rgba(39,126,71,0.13);
+    box-shadow: 0 4px 18px 0 rgba(39,126,71,0.13);
+    border-color: #b6e2c6;
 }
+
 .sales-agency-news-img {
-    height: 160px;
     width: 100%;
-    background-position: center;
+    height: 240px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-    display: block;
-    object-fit: cover;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
 }
-.sales-agency-news-img::before {
-    content: '';
+
+.sales-agency-news-title-overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
-    pointer-events: none;
-    border-radius: 10px 10px 0 0;
-    z-index: 1;
+    left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 100%);
+    padding: 20px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    line-height: 1.4;
 }
+
 .sales-agency-news-content {
-    padding: 18px 18px 14px 18px;
-    font-size: 1.01em;
-    color: #333;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  padding: 24px 28px;
+  line-height: 1.6;
 }
-.sales-agency-news-content strong {
-    color: var(--primary-color);
-    font-size: 1.08em;
-    margin-bottom: 6px;
-    display: block;
+
+.sales-agency-news-content a {
+  margin-top: 12px;
+  display: block;
+  text-align: right;
 }
-@media (max-width: 800px) {
-    .sales-agency-news-list {
-        flex-direction: column;
-        gap: 12px;
-    }
-    .sales-agency-news-item {
-        max-width: 100%;
-        min-width: 0;
-    }
-    .sales-agency-news-img {
-        height: 120px;
-    }
+
+@media (max-width: 768px) {
+  .sales-agency-news-img {
+    width: 100%;
+    height: 180px;
+  }
+  .sales-agency-news-title-overlay {
+    padding: 15px;
+    font-size: 1em;
+  }
+  .sales-agency-news-content {
+    padding: 18px 20px;
+  }
+  .sales-agency-news-content a {
+    margin-top: 10px;
+  }
 }
 
 .sales-agency-news-link {
@@ -3992,13 +3991,6 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     text-align: right;
     margin-top: 10px;
     font-weight: 500;
-}
-
-.sales-agency-news-list .sales-agency-news-item {
-    margin-bottom: 22px;
-}
-.sales-agency-news-list .sales-agency-news-item:last-child {
-    margin-bottom: 0;
 }
 
 /* 確立された販売チャネル 美化样式 */
@@ -4016,7 +4008,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
   padding: 22px 20px 16px 20px;
   min-width: 240px;
   flex: 1 1 260px;
-  max-width: 340px;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s;
@@ -4077,6 +4069,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
   align-items: flex-end;
   padding: 0 20px 18px 20px;
   border-radius: 8px 8px 0 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .channel-title {
   color: #fff;
@@ -4109,7 +4102,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
   }
   .channel-title-overlay {
     padding: 0 12px 12px 12px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 20px 20px 0 0;
   }
 }
 @media (max-width: 600px) {
@@ -4118,11 +4111,12 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     border-radius: 8px 8px 0 0;
   }
   .channel-title-overlay {
-    padding: 0 8px 8px 8px;
+    padding: 10px 20px 12px 20px;
     border-radius: 8px 8px 0 0;
   }
   .sales-agency-channel {
     border-radius: 8px;
+    max-width: 100%;
   }
 }
 
@@ -4157,5 +4151,33 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
   }
   .sales-agency-channel .channel-feature {
     margin-top: 8px;
+  }
+}
+
+.sales-agency-news-title-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 100%);
+  padding: 20px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  line-height: 1.4;
+}
+
+.sales-agency-news-content {
+  padding: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sales-agency-news-img {
+    width: 100%;
+    height: 180px;
+  }
+  .sales-agency-news-title-overlay {
+    padding: 15px;
+    font-size: 1em;
   }
 }
