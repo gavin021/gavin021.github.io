@@ -3467,7 +3467,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     padding-left: 0;
 }
 .sales-agency-item {
-    margin-bottom: 60px;
+    margin-top: 60px;
     position: relative;
 }
 .sales-agency-card-group {
@@ -3558,7 +3558,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
     right: 0;
     bottom: 0;
     border-radius: 12px 12px 0 0;
-    background: rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.4);    
     z-index: 1;
     pointer-events: none;
     backdrop-filter: blur(10px);
@@ -3566,7 +3566,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 
 .sales-agency-section-body {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     background: #fff;
     border-radius: 0 0 12px 12px;
 }
@@ -3588,7 +3588,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
         border-radius: 8px 8px 0 0;
     }
     .sales-agency-section-body {
-        padding: 3rem 1.2rem 1.2rem 1.2rem;
+        padding: 0rem 1.2rem 1.2rem 1.2rem;
         border-radius: 0 0 8px 8px;
     }
 }
@@ -3813,7 +3813,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .sales-agency-news-title-overlay {
     position: absolute;
     left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%);
     padding: 20px;
     color: #fff;
     font-size: 1.1em;
@@ -3927,7 +3927,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .channel-title-overlay {
   position: absolute;
   left: 0; right: 0; bottom: 0; height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.08) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.3) 100%);
   display: flex;
   align-items: flex-end;
   padding: 0 20px 18px 20px;
