@@ -3072,6 +3072,11 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .contact-form label {
     margin-bottom: 0.2rem;
 }
+.contact-form label.required::after {
+    content: ' *';
+    color: #e74c3c;
+    margin-left: 4px;
+}
 .contact-form input,
 .contact-form textarea {
     border: 1px solid #e0e0e0;

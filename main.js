@@ -237,6 +237,12 @@ const translations = {
         'established-sales-channels': 'Established Sales Channels',
         'view-details': 'View Details',
         'partnership-flow': 'Partnership Flow',
+        'contact-form-name': 'Your Name',
+        'contact-form-company': 'Company Name',
+        'contact-form-email': 'Your Email',
+        'contact-form-phone': 'Your Phone',
+        'contact-form-message': 'Message',
+        'contact-form-submit': 'Submit',
     },
     'zh': {
         'nav-home': '首页',
@@ -412,6 +418,12 @@ const translations = {
         'established-sales-channels': '已建立的销售渠道',
         'view-details': '查看详细',
         'partnership-flow': '合作流程',
+        'contact-form-name': '您的姓名',
+        'contact-form-company': '公司名称',
+        'contact-form-email': '您的邮箱',
+        'contact-form-phone': '您的电话',
+        'contact-form-message': '咨询内容',
+        'contact-form-submit': '提交',
     },
     'jp': {
         'nav-home': 'ホーム',
@@ -587,6 +599,12 @@ const translations = {
         'established-sales-channels': '確立された販売チャネル',
         'view-details': '詳細を見る',
         'partnership-flow': 'ご提携の流れ',
+        'contact-form-name': 'お名前',
+        'contact-form-company': '会社名',
+        'contact-form-email': 'メールアドレス',
+        'contact-form-phone': '電話番号',
+        'contact-form-message': 'お問い合わせ内容',
+        'contact-form-submit': '送信',
     }
 };
 
