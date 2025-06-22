@@ -413,7 +413,6 @@ body {
 
 .hero h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     position: relative;
     letter-spacing: 0.5px;
@@ -957,7 +956,7 @@ body {
 
 /* 合作伙伴样式 */
 .partners {
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
     background: #fff;
     overflow: hidden;
 }
@@ -969,8 +968,8 @@ body {
 }
 
 .partners-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
@@ -2061,7 +2060,6 @@ body {
 .policy-section li {
     color: #333;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -4151,4 +4149,52 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .services-preview h2 {
     text-align: center;
     margin-bottom: 3rem;
+}
+
+/* Policy Page Styles */
+.policy-container {
+    max-width: 1200px;
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-text {
+    font-size: 1.12rem;
+    line-height: 2.0;
+}
+
+.policy-list {
+    padding-left: 1.2em;
+}
+
+.policy-item-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Compliance Page Styles */
+.compliance-content .policy-container {
+    padding: 20px;
+}
+
+.compliance-content .policy-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.compliance-content .policy-section {
+    margin-bottom: 32px;
+}
+
+.compliance-content .policy-text {
+    font-size: 1.08rem;
+    line-height: 1.8;
 }
