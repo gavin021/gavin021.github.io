@@ -3522,7 +3522,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 .sales-agency-section-hero {
     position: relative;
     width: 100%;
-    height: 160px;
+    height: 120px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -3536,7 +3536,7 @@ section.hero-slider .hero-slide:not(.star-bg) .hero-subtitle {
 }
 @media (max-width: 600px) {
     .sales-agency-section-hero {
-        height: 220px;
+        height: 180px;
         border-radius: 8px 8px 0 0;
     }
 }
